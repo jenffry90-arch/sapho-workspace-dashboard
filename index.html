@@ -1,18 +1,112 @@
 <!doctype html>
-<html lang="en">
+<html lang='en'>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="noindex,nofollow,noarchive" />
-  <title>Dashboard unavailable</title>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>Sapho Workspace Dashboard</title>
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#0c1018;color:#eef3ff;margin:0;min-height:100vh;display:grid;place-items:center;padding:24px}main{max-width:620px;background:#151b27;border:1px solid #273247;border-radius:18px;padding:28px}h1{margin-top:0}p{color:#a9b5ca;line-height:1.5}
+    :root { --bg:#0c1018; --panel:#151b27; --panel2:#101620; --text:#eef3ff; --muted:#a9b5ca; --line:#273247; --accent:#8fb3ff; --good:#75d69c; --warn:#ffd479; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:linear-gradient(180deg,#0c1018,#111827); color:var(--text); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+    main { max-width:1180px; margin:0 auto; padding:22px; }
+    h1,h2,h3 { margin:0 0 10px; }
+    p { color:var(--muted); margin:0 0 10px; }
+    ul { margin:8px 0 0 20px; color:var(--muted); padding:0; }
+    li { margin:7px 0; }
+    .hero { border:1px solid var(--line); background:rgba(21,27,39,.92); border-radius:18px; padding:20px; margin-bottom:16px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+    .card,.mini-card { border:1px solid var(--line); background:var(--panel); border-radius:16px; padding:16px; }
+    .mini-card { background:var(--panel2); }
+    .accent { color:var(--accent); }
+    .muted { color:var(--muted); }
+    .pill { display:inline-block; padding:5px 9px; border:1px solid var(--line); border-radius:999px; color:var(--muted); font-size:12px; margin:3px 5px 3px 0; }
+    .public { color:var(--warn); }
+    footer { color:var(--muted); font-size:12px; margin:18px 0 4px; }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Dashboard unavailable</h1>
-    <p>This public dashboard has been removed. A private version may be published behind access control later.</p>
-  </main>
+<main>
+  <section class='hero'>
+    <h1>Sapho Workspace Dashboard</h1>
+    <p>Dynamic, privacy-sanitized public view of the operating system: focus, open loops, review touchpoints, and recent continuity changes.</p>
+    <span class='pill'>Generated: 2026-05-18 06:22 PM</span><span class='pill'>Source: local wiki</span><span class='pill public'>Public-safe summary</span>
+  </section>
+
+  <section class='grid'>
+    <article class='card'>
+      <h2 class='accent'>Current bearing</h2>
+      <p>Mental health stabilization and clarity-first life rebuild, with the mental-health target now defined as more grounded presence, less observer-mode overanalysis, and acceptance/commitment toward the actual life Jenffry is living.</p>
+      <h3>Near-term top 3</h3>
+      <ul><li>Mental health stabilization.</li>
+<li>Physical health / body-system stabilization.</li>
+<li>Family, fatherhood, and relationship clarity.</li></ul>
+    </article>
+    <article class='card'>
+      <h2 class='accent'>Active operating work</h2>
+      <ul><li>Keep TickTick aligned to the strategic layer and prevent admin soup.</li>
+<li>Clean the Princess UX/UI overload into actionable work, Jira/context capture, blocked/waiting items, and archive candidates.</li>
+<li>Keep finance grounded in the one-income budget baseline and weekly finance review.</li>
+<li>Preserve social/fun as restoration and future-excitement, not another large administrative list.</li>
+<li>Calibrate Sapho&#x27;s recurring check-ins so they are short, staged, decision-focused, and useful.</li></ul>
+    </article>
+    <article class='card'>
+      <h2 class='accent'>Protected rhythms</h2>
+      <ul><li>Daily morning check-in: plan the day, inspect TickTick, show progress/slippage lightly, and choose one big task plus one quick win.</li>
+<li>Daily evening closeout: short reset, slips, tomorrow setup, sleep/mental-health support, and tomorrow&#x27;s one big task plus one quick win.</li>
+<li>Weekly review: commitments, TickTick alignment, Hevy gym progress, finance review, weekly progress-dashboard trends, archive review, and next-week day-by-day commitments using one big task plus one quick win per day.</li>
+<li>Monthly review: whole goals-to-execution system, not one domain; summarize weekly dashboard trends and update what should be tracked next month.</li>
+<li>Weekly continuity audit: catch missed durable memory/wiki updates.</li></ul>
+    </article>
+  </section>
+
+  <section class='card' style='margin-top:14px'>
+    <h2 class='accent'>Priority open loops</h2>
+    <div class='grid'><article class='mini-card'><h3>Solidify Jenffry&#x27;s goals layer</h3><p>open — first pass complete; execution/refinement remains</p></article>
+<article class='mini-card'><h3>Capture January mental-health incident context</h3><p>partly open — sensitive/foundational</p></article>
+<article class='mini-card'><h3>Prepare Sapho for mental-health support role</h3><p>open — foundational</p></article>
+<article class='mini-card'><h3>Build Sapho workspace blueprint / internal-systems dashboard</h3><p>open — proposed from video comparison</p></article>
+<article class='mini-card'><h3>Formalize Sapho model-routing policy matrix</h3><p>open — return later</p></article>
+<article class='mini-card'><h3>Relationship/fatherhood clarity</h3><p>open — practice layer defined</p></article>
+<article class='mini-card'><h3>Body system</h3><p>open — first-pass physical-health targets defined</p></article>
+<article class='mini-card'><h3>Princess UX/UI work organization</h3><p>open — success buckets defined</p></article></div>
+  </section>
+
+  <section class='grid' style='margin-top:14px'>
+    <article class='card'>
+      <h2 class='accent'>Progress signals</h2>
+      <ul><li>Sleep quality: 1–5.</li>
+<li>Capacity / mental-health state: 1–5.</li>
+<li>Observer-mode or rumination intensity: 1–5, where 1 = low and 5 = high.</li>
+<li>Gym intention/completion: planned, completed, skipped, substituted.</li></ul>
+    </article>
+    <article class='card'>
+      <h2 class='accent'>Raw capture / privacy state</h2>
+      <ul><li>Brain dump sessions needing processing: 4</li>
+<li>Perception entries are captured privately in the wiki, not published here.</li>
+<li>Public dashboard mode: sanitized summaries only.</li></ul>
+    </article>
+    <article class='card'>
+      <h2 class='accent'>Recent continuity changes</h2>
+      <ul><li>[2026-05-18] update | Sapho dashboard public link removed from active use</li>
+<li>[2026-05-18] update | Sapho workspace blueprint open loop</li>
+<li>[2026-05-18] create | Sapho workspace blueprint v1</li>
+<li>[2026-05-18] create | Workspace dashboard v0 implementation plan</li>
+<li>[2026-05-18] update | Dashboard auto-publish and relevance pass</li></ul>
+    </article>
+  </section>
+
+  <section class='card' style='margin-top:14px'>
+    <h2 class='accent'>Routing rules</h2>
+    <span class='pill'>Raw dump → capture container</span>
+    <span class='pill'>Decision → decision log</span>
+    <span class='pill'>Unresolved → open loops</span>
+    <span class='pill'>Plan/focus shift → wiki</span>
+    <span class='pill'>Concrete dated action → TickTick</span>
+  </section>
+
+  <footer>
+    Public URL: https://jenffry90-arch.github.io/sapho-workspace-dashboard/ · This page intentionally excludes secrets, exact dollar amounts, immigration IDs, and raw mental-health/perception content.
+  </footer>
+</main>
 </body>
 </html>
