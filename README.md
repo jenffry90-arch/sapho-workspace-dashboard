@@ -1,3 +1,3 @@
 # Sapho Workspace Dashboard
 
-Auto-generated public-safe dashboard from Sapho wiki signals.
+Full live wiki dashboard generated from local markdown pages.
