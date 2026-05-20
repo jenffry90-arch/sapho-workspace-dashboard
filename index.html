@@ -84,7 +84,7 @@
   <section class='hero'>
     <h1>Sapho Workspace Dashboard</h1>
     <p>Full live wiki view with a graph of wikilinks, a page browser, and the current operating summaries layered on top.</p>
-    <div><span class='pill'>Pages: 39</span><span class='pill'>Links: 172</span><span class='pill'>Categories: areas: 19, entities: 1, inbox: 2, plans: 1, raw: 8, root: 3, system: 5</span><span class='pill accent'>Full live wiki view</span></div>
+    <div><span class='pill'>Pages: 42</span><span class='pill'>Links: 172</span><span class='pill'>Categories: areas: 19, entities: 1, inbox: 2, plans: 1, raw: 9, root: 3, system: 7</span><span class='pill accent'>Full live wiki view</span></div>
   </section>
 
   <section class='summary-shell'>
@@ -5905,6 +5905,274 @@ Full source preserved: `raw/reference/life-area-frameworks-2026-05-20.md`.
 The weekly cron job `a42c23ac4083` runs as `Weekly continuity memory audit and wiki cleanup`. Its role is to keep the current wiki healthy, not just collect missed memory. It should route durable session signal into the current life-area/system/inbox structure, repair stale links after migrations, keep `index.md` and dashboard summaries aligned, and avoid creating new process unless it clearly reduces future confusion. Delivery is local-only by default.</pre></div>
   </div>
 </details>
+<details class='page-card' id='page-system-sapho-system-map-md' data-page-id='system/sapho-system-map.md'>
+  <summary>
+    <div>
+      <div class='page-title'>Sapho System Map</div>
+      <div class='page-meta'>system/sapho-system-map.md</div>
+    </div>
+    <div class='page-degree'>degree 0</div>
+  </summary>
+  <div class='page-body'>
+    <p class='page-excerpt'>Status: One-page architecture map for Sapho as Jenffry&#x27;s personal Mentat operating system. Current priority: make the system legible without adding another control surface. Active signals: identity, memory, wiki, skills, cron, TickTick, raw evidence, backups, </p>
+    <div class='chip-row'><span class='muted'>No resolved wikilinks.</span></div>
+    <div class='markdown-wrap'><pre class='markdown'># Sapho System Map
+
+## Dashboard summary
+
+- Status: One-page architecture map for Sapho as Jenffry&#x27;s personal Mentat operating system.
+- Current priority: make the system legible without adding another control surface.
+- Active signals: identity, memory, wiki, skills, cron, TickTick, raw evidence, backups, logs, evals, dashboard, and guardrails.
+- Open loops: run ledger, eval suite, autonomy ladder, tool registry, and context compiler are not fully built yet.
+- Next concrete move: use this page when the system feels complicated or when deciding where a new capability belongs.
+
+## One-line model
+
+Sapho is Jenffry&#x27;s personal Mentat system: a layered assistant designed to reduce fog, increase agency, and preserve continuity without becoming admin soup.
+
+## Layers
+
+### Identity
+
+- **Home:** `/opt/data/SOUL.md`
+- **Role:** name, tone, posture, boundaries, and Sapho&#x27;s Mentat operating style.
+- **Rule:** stable identity lives here, not scattered through cron prompts.
+
+### Memory
+
+- **Home:** persistent memory.
+- **Role:** tiny durable facts that should affect every future session.
+- **Rule:** memory is not a mini-wiki. It stays compact.
+
+### Wiki
+
+- **Home:** `/opt/data/wiki`
+- **Role:** structured continuity: plans, life areas, decisions, open loops, dashboard summaries, raw/source material.
+- **Current spine:**
+  - `areas/` — Health, Relationships, Finances, Career, Leisure, Life Admin.
+  - `system/` — strategy, decisions, open loops, Sapho operating rules, dashboard, registries.
+  - `inbox/` — active raw capture.
+  - `raw/` — evidence and reference.
+  - `plans/` — migration/implementation plans.
+
+### Skills
+
+- **Home:** `/opt/data/skills`
+- **Role:** repeatable procedures.
+- **Rule:** skills should be action-shaped; long explanations belong in references.
+
+### Cron
+
+- **Home:** scheduler jobs plus future `system/cron-registry.md` if needed.
+- **Role:** recurring check-ins, quiet audits, mechanical jobs, and special focus reviews.
+- **Rule:** cron should reduce reliance on habit, not create review fatigue.
+
+### TickTick
+
+- **Home:** TickTick.
+- **Role:** concrete execution tasks only.
+- **Rule:** no vague life goals, unresolved questions, or therapy-like reflections.
+
+### Raw evidence
+
+- **Home:** `raw/` and active `inbox/` pages.
+- **Role:** source material, transcripts, exports, and reference documents.
+- **Rule:** preserve raw first, synthesize second.
+
+### Backups
+
+- **Home:** `/opt/data/backups/` and wiki backup folders.
+- **Role:** recovery and history.
+- **Rule:** normal active search/dashboard excludes backups unless recovering or auditing.
+
+### Logs / run ledger
+
+- **Current home:** system logs and wiki `log.md`.
+- **Future home:** `/opt/data/logs/agent-runs/`.
+- **Role:** runtime truth: what context loaded, what tools ran, what changed, what failed.
+- **Status:** open upgrade.
+
+### Evals
+
+- **Future home:** `/opt/data/evals/sapho/`.
+- **Role:** test Sapho&#x27;s routing, memory, TickTick, wiki, cron, and autonomy behavior.
+- **Status:** open upgrade.
+
+### Safety / guardrails
+
+- **Home:** future `system/autonomy-policy.md` and `system/tool-registry.md`, or consolidated into `system/sapho-operating-system.md` until the pages earn their keep.
+- **Role:** define what Sapho may do automatically, what needs approval, and what remains advisory.
+- **Status:** open upgrade.
+
+### Dashboard
+
+- **Home:** `system/dashboard.md` plus hosted GitHub Pages dashboard.
+- **Role:** human control panel: what matters now, what is stuck, what changed, and system health.
+- **Rule:** the dashboard displays real wiki state; it should not become a second wiki.
+
+## Sapho 2.0 thesis
+
+Sapho&#x27;s next phase is not more structure for its own sake. It is:
+
+- fewer overlapping control surfaces
+- stronger routing rules
+- better runtime monitoring
+- safer tool autonomy
+- clearer human legibility
+- testable quality through evals
+
+## Highest-leverage upgrades
+
+1. **Source-of-truth registry** — done as `system/source-of-truth-registry.md`.
+2. **Context compiler** — open.
+3. **Run ledger / flight recorder** — open.
+4. **Eval suite** — open.
+5. **Autonomy ladder / tool registry** — open.
+
+## Source
+
+This map was created from the uploaded Sapho System Improvement Plan, preserved at:
+
+- `raw/reference/sapho-system-improvement-plan-2026-05-20.md`</pre></div>
+  </div>
+</details>
+<details class='page-card' id='page-system-source-of-truth-registry-md' data-page-id='system/source-of-truth-registry.md'>
+  <summary>
+    <div>
+      <div class='page-title'>Source of Truth Registry</div>
+      <div class='page-meta'>system/source-of-truth-registry.md</div>
+    </div>
+    <div class='page-degree'>degree 0</div>
+  </summary>
+  <div class='page-body'>
+    <p class='page-excerpt'>Status: Active routing constitution for Sapho&#x27;s information layers. Current priority: prevent duplication across memory, wiki, skills, cron, TickTick, and logs. Active signals: Sapho 2.0 should compress control surfaces, strengthen routing, and improve observa</p>
+    <div class='chip-row'><span class='muted'>No resolved wikilinks.</span></div>
+    <div class='markdown-wrap'><pre class='markdown'># Source of Truth Registry
+
+## Dashboard summary
+
+- Status: Active routing constitution for Sapho&#x27;s information layers.
+- Current priority: prevent duplication across memory, wiki, skills, cron, TickTick, and logs.
+- Active signals: Sapho 2.0 should compress control surfaces, strengthen routing, and improve observability.
+- Open loops: context compiler, run ledger, evals, autonomy ladder, and tool registry remain future upgrades.
+- Next concrete move: use this registry before adding new pages, memories, skills, cron jobs, or TickTick tasks.
+
+## Purpose
+
+This registry defines the canonical home for each kind of information in Sapho. The rule is simple:
+
+&gt; Before saving or changing anything, ask: **what is the home of record for this?**
+
+The goal is not to store less useful context. The goal is to stop the same context from living in five places where it slowly diverges.
+
+## Routing table
+
+### Identity, tone, and stable behavior
+
+- **Canonical home:** `/opt/data/SOUL.md`
+- **Also allowed:** compact persistent memory for high-value stable preferences; `system/sapho-operating-system.md` for structured explanation.
+- **Not allowed:** TickTick, random cron prompts, duplicated skill manuals.
+
+### Stable user preferences
+
+- **Canonical home:** persistent memory.
+- **Also allowed:** wiki only when the preference needs structured context or history.
+- **Not allowed:** current plan pages, TickTick, raw logs as the only source.
+
+### Durable plans and life context
+
+- **Canonical home:** `/opt/data/wiki`.
+- **Current structure:**
+  - `system/current-strategy.md` for active strategy/focus/goals cascade.
+  - `areas/` for life-area context.
+  - `system/open-loops.md` for unresolved questions.
+  - `system/decision-log.md` for decisions.
+- **Not allowed:** persistent memory unless it is a tiny stable fact; TickTick unless it has a concrete next action.
+
+### Active priorities and focus hierarchy
+
+- **Canonical home:** `system/current-strategy.md`.
+- **Not allowed:** duplicated independent focus pages or cron prompts as the only source.
+
+### Decisions
+
+- **Canonical home:** `system/decision-log.md`.
+- **Format:** lightweight decision record: date, status, context, decision, rationale, consequences, links.
+- **Not allowed:** memory unless the decision creates a stable preference; TickTick.
+
+### Open unresolved questions
+
+- **Canonical home:** `system/open-loops.md`.
+- **Rule:** an open loop must eventually be promoted, parked, resolved, retired, or converted into a concrete next action.
+- **Not allowed:** TickTick unless the next action is visible and executable.
+
+### Repeatable procedures
+
+- **Canonical home:** skills.
+- **Rule:** skill body should be action-shaped; long explanation belongs in skill references.
+- **Not allowed:** wiki planning pages as the only procedural source.
+
+### Scheduled rhythms and recurring automation
+
+- **Canonical home:** cron jobs plus `system/cron-registry.md` if/when created.
+- **Also allowed:** `system/sapho-operating-system.md` for policy; `system/decision-log.md` for decisions.
+- **Not allowed:** TickTick unless there is a user-facing action.
+
+### Concrete execution tasks
+
+- **Canonical home:** TickTick.
+- **Admission rule:** a task needs a verb, object, clear done condition, life area, and a date only if timing matters.
+- **Not allowed:** wiki, memory, or open loops as a substitute for executable tasks.
+
+### Raw dumps and evidence
+
+- **Canonical home:** `raw/` for source material, `inbox/` for active capture.
+- **Examples:** `inbox/brain-dump-sessions.md`, `inbox/perception-log.md`, `raw/transcripts/`, `raw/reference/`.
+- **Not allowed:** main planning pages without synthesis.
+
+### Historical versions and backups
+
+- **Canonical home:** `backups/` or `/opt/data/backups/`.
+- **Rule:** normal active search excludes backups; recovery/audit search may include them.
+- **Not allowed:** active dashboard/search scope unless explicitly requested.
+
+### Runtime traces / flight recorder
+
+- **Canonical home:** future `/opt/data/logs/agent-runs/`.
+- **Not allowed:** decision log as a dumping ground for every tool call.
+- **Status:** open upgrade.
+
+### Test cases and evals
+
+- **Canonical home:** future `/opt/data/evals/sapho/`.
+- **Not allowed:** long test banks inside skill bodies.
+- **Status:** open upgrade.
+
+### Dashboard-facing state
+
+- **Canonical home:** `## Dashboard summary` sections inside real wiki pages.
+- **Not allowed:** a duplicate dashboard-only mini-wiki.
+
+## Routing discipline
+
+When new information arrives:
+
+1. Identify the information type.
+2. Route it to the canonical home.
+3. If the canonical home changes, update this registry.
+4. If the information is temporary, avoid persistent memory.
+5. If the information is broad and unresolved, use open loops, not TickTick.
+6. If the information is executable, use TickTick, not the wiki.
+7. If the information is a procedure, use a skill.
+8. If the information is evidence, preserve it under `raw/` before synthesis.
+
+## Source
+
+This registry was created from the uploaded Sapho System Improvement Plan, preserved at:
+
+- `raw/reference/sapho-system-improvement-plan-2026-05-20.md`</pre></div>
+  </div>
+</details>
 </div></section>
 <section class='wiki-group'><h3>Inbox</h3><div class='wiki-grid'>
 <details class='page-card' id='page-inbox-brain-dump-sessions-md' data-page-id='inbox/brain-dump-sessions.md'>
@@ -6576,6 +6844,1149 @@ They usually:
 Jenffry&#x27;s current set is within the normal range of life-area models, and the sublabel approach for Relationships is consistent with how many wheel-of-life systems let a broad domain contain smaller subdomains.</pre></div>
   </div>
 </details>
+<details class='page-card' id='page-raw-reference-sapho-system-improvement-plan-2026-05-20-md' data-page-id='raw/reference/sapho-system-improvement-plan-2026-05-20.md'>
+  <summary>
+    <div>
+      <div class='page-title'>**Upgrade thesis**</div>
+      <div class='page-meta'>raw/reference/sapho-system-improvement-plan-2026-05-20.md</div>
+    </div>
+    <div class='page-degree'>degree 0</div>
+  </summary>
+  <div class='page-body'>
+    <p class='page-excerpt'>Below is the processed upgrade plan for Sapho as a personal Hermes AI agent system. The conversation shows that Sapho is already a serious layered operating system: SOUL/persona, persistent memory, wiki, skills, cron, TickTick, raw capture, backups, and extern</p>
+    <div class='chip-row'><span class='muted'>No resolved wikilinks.</span></div>
+    <div class='markdown-wrap'><pre class='markdown'>Below is the processed upgrade plan for Sapho as a personal Hermes AI agent system.
+
+The conversation shows that Sapho is already a serious layered operating system: **SOUL/persona**, **persistent memory**, **wiki**, **skills**, **cron**, **TickTick**, **raw capture**, **backups**, and external tools like Google Workspace and Hevy. The repeated critique across the conversation is not “Sapho lacks structure.” It is the opposite: Sapho is strong, but now needs **compression, routing discipline, observability, evals, guardrails, and better human legibility**.
+
+## **Core diagnosis**
+
+Sapho’s current architecture is good. The next phase should not be “add more stuff.” It should be:
+
+**Sapho 2.0 \= same layered system, but with fewer overlapping control surfaces, stronger routing rules, better runtime monitoring, and safer tool autonomy.**
+
+The system’s current risks are:
+
+1. **Planning overlap**  
+   `current-plan`, `focus-map`, `goals-cascade`, `life-rebuild`, `planning-style`, `open-loops`, and `decision-log` are all useful, but too close together.  
+2. **Skills becoming manuals**  
+   `jenffry-continuity`, `ticktick-task-management`, and `hermes-agent` are valuable, but risk becoming giant policy archives instead of clean procedures.  
+3. **Cron review bloat**  
+   The cron layer is useful, but many jobs touch reflection, planning, mental health, weekly review, perception review, and relationship clarity. That creates possible “review fatigue.”  
+4. **TickTick task pollution**  
+   TickTick is correctly the execution layer, but it can easily absorb vague planning residue, stale dated tasks, and unresolved life questions.  
+5. **Memory duplication**  
+   Memory is currently mostly healthy, but it must stay tiny. It should not mirror the wiki, skills, or current project state.  
+6. **Prompt fragility**  
+   Invisible Unicode or formatting issues already caused a cron failure, which means Sapho needs prompt linting/sanitization before scheduled jobs run.  
+7. **Limited observability**  
+   Sapho has logs and wiki history, but not a true “flight recorder” for agent runs: what context loaded, what tools were called, what decisions were made, what failed, and why.
+
+Modern agent systems benefit from exactly these missing pieces: explicit orchestration/state ownership, tracing, guardrails, human review, and evals. OpenAI describes agents as applications that plan, call tools, collaborate across specialists, and maintain enough state for multi-step work; the SDK path is meant for systems that own orchestration, tool execution, approvals, and state. ([OpenAI Developers](https://developers.openai.com/api/docs/guides/agents))
+
+---
+
+# **Upgrade thesis**
+
+Sapho should become a **lean personal agent operating system** with four new backbone capabilities:
+
+1. **A source-of-truth registry**  
+   Every kind of information has one canonical home.  
+2. **A context compiler**  
+   Sapho should load only the right context for the current task, not the whole system.  
+3. **A run ledger / observability layer**  
+   Every meaningful agent run should be traceable.  
+4. **An autonomy and safety policy**  
+   Sapho should know which actions it may perform automatically, which require approval, and which are advisory only.
+
+This matters because context is finite. Anthropic’s context-engineering guidance frames agent reliability as a problem of curating the right state, tools, memory, external data, and history into the model context, not merely writing better prompts. ([Anthropic](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents))
+
+---
+
+# **Phase 1: Create the Sapho source-of-truth registry**
+
+Create one canonical registry file, probably:
+
+`/opt/data/wiki/concepts/source-of-truth-registry.md`
+
+Its job: define where each kind of information belongs.
+
+## **Proposed registry**
+
+| Information type | Canonical home | Not allowed in |
+| ----- | ----- | ----- |
+| Persona, tone, role | `SOUL.md` | Skills, cron prompts, TickTick |
+| Stable user preferences | Persistent memory | Wiki unless detailed |
+| Durable plans/context | Wiki | Memory, TickTick |
+| Active priorities | `current-plan.md` | Random life-area pages |
+| Focus hierarchy | `focus-map.md` or folded into `current-plan.md` | Cron prompts |
+| Decisions | `decision-log.md` | Memory, TickTick |
+| Open unresolved questions | `open-loops.md` | TickTick unless next-actionable |
+| Repeatable procedures | Skills | Wiki planning pages |
+| Scheduled rhythms | Cron | TickTick unless user-facing action |
+| Concrete tasks | TickTick | Wiki, memory |
+| Raw dumps/evidence | `raw/`, `brain-dump-sessions.md`, `perception-log.md` | Main planning pages |
+| Historical versions | `backups/` | Active wiki search scope |
+| Runtime traces | New `runs/` or `logs/agent-runs/` | Decision log |
+| Test cases/evals | New `evals/` | Skills body |
+
+## **Why this is priority one**
+
+Right now, Sapho’s main bloat risk is not too much information. It is information living in too many valid-looking places.
+
+This registry becomes the routing constitution.
+
+Every future change asks:
+
+**“What is the home of record for this?”**
+
+---
+
+# **Phase 2: Compress the planning layer**
+
+The planning cluster is Sapho’s heaviest area.
+
+Current cluster:
+
+* `current-plan.md`  
+* `focus-map.md`  
+* `goals-cascade.md`  
+* `life-rebuild.md`  
+* `planning-style.md`  
+* `open-loops.md`  
+* `decision-log.md`
+
+Do not delete them blindly. Instead, assign sharper jobs.
+
+## **Recommended page roles**
+
+### **1\. `current-plan.md` becomes the control tower**
+
+It should be short and current.
+
+Suggested sections:
+
+\# Current Plan
+
+\#\# Now  
+The 1-3 active fronts.
+
+\#\# Next  
+The next few moves, not a huge backlog.
+
+\#\# Waiting / Blocked  
+Things not actionable yet.
+
+\#\# This Week’s Operating Rule  
+One behavioral rule for the current phase.
+
+\#\# Links  
+\- Focus map  
+\- Open loops  
+\- Goals cascade  
+\- Decision log
+
+Rule: if `current-plan.md` cannot be scanned in under two minutes, it is too heavy.
+
+### **2\. `focus-map.md` becomes either a derived page or gets merged**
+
+Current critique says `focus-map` and `current-plan` overlap heavily. Keep it only if it answers a different question.
+
+Best distinction:
+
+* `current-plan.md` \= what Sapho is helping with now  
+* `focus-map.md` \= what should receive attention, energy, and protection
+
+If that distinction does not stay useful, merge `focus-map` into `current-plan`.
+
+### **3\. `goals-cascade.md` becomes a strict cascade only**
+
+It should not become a philosophical planning page.
+
+Keep only:
+
+Long-term direction  
+→ 12-month outcomes  
+→ quarterly/monthly targets  
+→ weekly commitments  
+→ daily moves  
+→ TickTick conversion rule
+
+### **4\. `life-rebuild.md` becomes a high-level narrative**
+
+This should not compete with current planning.
+
+Its role:
+
+* long-frame story  
+* rebuilding principles  
+* why the system exists  
+* not active task steering
+
+### **5\. `planning-style.md` becomes doctrine, not a plan**
+
+Keep the core planning rules there:
+
+* clarity-first  
+* one meaningful task \+ one quick win  
+* avoid ambitious evening stacking  
+* planning only matters if it reduces fog
+
+### **6\. `open-loops.md` gets split by status**
+
+This page is carrying too much unresolved energy.
+
+Recommended structure:
+
+\# Open Loops
+
+\#\# Active Open Loops  
+Maximum 10\.
+
+\#\# Parked / Later  
+Valid, but not active.
+
+\#\# Needs Decision  
+Can be resolved by a choice.
+
+\#\# Needs Information  
+Cannot be resolved yet.
+
+\#\# System Open Loops  
+Sapho/Hermes architecture issues.
+
+\#\# Retired  
+Closed, stale, or deliberately dropped.
+
+Rule: no open loop should live forever without being promoted, parked, resolved, or retired.
+
+### **7\. `decision-log.md` becomes ADR-style**
+
+Use a lightweight architecture decision record format:
+
+\#\# YYYY-MM-DD — Decision title
+
+Status: accepted / replaced / retired  
+Context:  
+Decision:  
+Rationale:  
+Consequences:  
+Links:
+
+This keeps decisions from turning into vague notes.
+
+---
+
+# **Phase 3: Add page metadata to the wiki**
+
+Add small frontmatter to important wiki pages.
+
+Example:
+
+\---  
+type: control-tower  
+status: active  
+home\_of\_record: current priorities  
+last\_reviewed: 2026-05-19  
+review\_cadence: weekly  
+related:  
+  \- open-loops  
+  \- decision-log  
+  \- goals-cascade  
+\---
+
+This makes the wiki easier for both humans and agents to route.
+
+AWS’s RAG documentation emphasizes that clear headings and structure help retrieval systems understand and extract information from documents more effectively. Sapho’s wiki is effectively a personal RAG corpus, so page structure is not cosmetic; it directly improves retrieval quality. ([AWS Documentation](https://docs.aws.amazon.com/prescriptive-guidance/latest/writing-best-practices-rag/best-practices.html))
+
+---
+
+# **Phase 4: Refactor skills into lean procedures**
+
+Current issue: some skills are drifting into operating manuals.
+
+New rule:
+
+**A skill should be action-shaped. A reference file can be explanation-shaped.**
+
+## **Recommended skill structure**
+
+Each major skill should have:
+
+\# Skill name
+
+\#\# Purpose  
+One paragraph.
+
+\#\# When to use  
+Clear triggers.
+
+\#\# Inputs needed  
+What Sapho must know before acting.
+
+\#\# Procedure  
+Step-by-step method.
+
+\#\# Output format  
+What the answer/action should produce.
+
+\#\# Boundaries  
+What not to do.
+
+\#\# References  
+Links to deeper docs.
+
+## **Compression targets**
+
+### **`jenffry-continuity`**
+
+Keep as the continuity governor, but slim the core skill.
+
+Move long explanations into references:
+
+* memory-vs-wiki.md  
+* open-loop-policy.md  
+* wiki-routing-policy.md  
+* decision-log-policy.md
+
+### **`ticktick-task-management`**
+
+Split into:
+
+* core task-routing skill  
+* task hygiene reference  
+* recurring review reference  
+* TickTick API/troubleshooting reference
+
+The skill body should mostly answer:
+
+**“Is this a task, and how should it be represented?”**
+
+### **`hermes-agent`**
+
+This should probably stop pretending to be a normal skill.
+
+Better role:
+
+**Hermes platform handbook**
+
+It can still be invoked, but it should be treated as system documentation for:
+
+* CLI  
+* cron  
+* config  
+* tools  
+* MCP  
+* model routing  
+* backups  
+* troubleshooting
+
+### **Narrow skills**
+
+Keep these narrow:
+
+* `health-and-fitness-planning`  
+* `personal-finance-budgeting`  
+* `weekend-social-planning`  
+* `google-workspace`
+
+They are closer to healthy skill shape because their domains are bounded.
+
+---
+
+# **Phase 5: Redesign cron into four categories**
+
+Cron is strong but risks reflection overload.
+
+Create a cron manifest:
+
+`/opt/data/wiki/concepts/cron-registry.md`
+
+Each job should have:
+
+name:  
+category:  
+cadence:  
+delivery:  
+loads\_skills:  
+purpose:  
+expected\_output:  
+noise\_level:  
+owner:  
+failure\_mode:  
+last\_reviewed:
+
+## **Four cron categories**
+
+### **1\. Anchor jobs**
+
+These shape the human day/week/month.
+
+* morning check-in  
+* evening closeout  
+* weekly review  
+* monthly review
+
+### **2\. Quiet governance jobs**
+
+These protect the system.
+
+* continuity audit  
+* lean-system audit  
+* memory audit  
+* wiki hygiene audit
+
+### **3\. Mechanical jobs**
+
+These should be boring and verifiable.
+
+* backups  
+* dashboard publish  
+* export jobs  
+* file integrity checks
+
+### **4\. Special focus jobs**
+
+These touch emotionally or strategically sensitive areas.
+
+* mental-health check-in  
+* relationship/fatherhood clarity  
+* perception review  
+* brain dump review
+
+## **Cron consolidation rule**
+
+If two jobs ask similar reflective questions, combine them or stagger them.
+
+Example:
+
+* Friday mental-health check-in  
+* weekly perception review  
+* evening closeout
+
+These may overlap. The fix is not necessarily deleting them. The fix is assigning each one a distinct role:
+
+* evening closeout \= today’s state and tomorrow’s next move  
+* Friday mental health \= weekly mental-health support boundary and pattern review  
+* perception review \= raw pattern extraction only, not planning
+
+## **Add prompt linting**
+
+Before cron prompts are saved or executed, run a sanitizer:
+
+* normalize Unicode  
+* reject invisible control characters  
+* validate YAML/JSON where applicable  
+* check prompt length  
+* check required sections  
+* dry-run with no tool side effects
+
+This directly addresses the invisible-character failure from the conversation.
+
+---
+
+# **Phase 6: Create TickTick’s action firewall**
+
+TickTick must stay ruthless.
+
+Add a simple rule:
+
+**No task enters TickTick unless it has a visible next action.**
+
+## **Task admission test**
+
+A TickTick task must have:
+
+1. A verb  
+2. An object  
+3. A clear done condition  
+4. A life area  
+5. A date only if timing matters
+
+Good:
+
+* “Book dentist appointment”  
+* “Review May budget and choose one adjustment”  
+* “Send relationship clarity notes to Sapho”  
+* “Complete workout A”
+
+Bad:
+
+* “Work on health”  
+* “Think about business”  
+* “Improve finances”  
+* “Figure out relationship”  
+* “Life rebuild”
+
+Those belong in the wiki or open loops.
+
+## **Weekly TickTick hygiene**
+
+Every week, stale tasks get one of five outcomes:
+
+1. Do  
+2. Reschedule  
+3. Clarify  
+4. Move to wiki  
+5. Archive/delete
+
+This prevents TickTick from becoming a guilt board.
+
+---
+
+# **Phase 7: Keep memory extremely small**
+
+Memory should store only durable facts that should affect every future session.
+
+Recommended memory entry format:
+
+Fact:  
+Why it matters:  
+Stability: stable / evolving / temporary  
+Review: never / quarterly / date
+
+## **Good memory candidates**
+
+* “Jenffry prefers plain-English explanations.”  
+* “Sapho should refer to itself as Sapho or Jenffry’s Mentat, not Hermes, unless discussing the platform.”  
+* “The six life areas are Health, Relationships, Finances, Career, Leisure, Maintenance.”  
+* “TickTick is execution-only.”
+
+## **Bad memory candidates**
+
+* current tasks  
+* current emotional state  
+* today’s plan  
+* open loops  
+* full procedures  
+* detailed decisions  
+* cron policy
+
+The memory layer’s value is that it is fast and always-on. If it becomes a mini-wiki, it loses that value.
+
+---
+
+# **Phase 8: Add Sapho’s run ledger / flight recorder**
+
+This is one of the most powerful upgrades.
+
+Create a lightweight runtime log for meaningful Sapho actions.
+
+Possible path:
+
+`/opt/data/logs/agent-runs/`
+
+Each run record should capture:
+
+timestamp:  
+request\_type:  
+loaded\_context:  
+skills\_used:  
+tools\_called:  
+files\_read:  
+files\_changed:  
+tasks\_created:  
+decisions\_made:  
+open\_loops\_updated:  
+errors:  
+user\_approval\_required:  
+final\_output\_summary:
+
+Why this matters:
+
+* easier debugging  
+* easier rollback  
+* easier trust  
+* easier bloat detection  
+* easier model comparison  
+* easier “why did Sapho do that?” review
+
+OpenAI’s Agents SDK tracing captures events such as LLM generations, tool calls, handoffs, guardrails, and custom events during a run, which is the same kind of observability Sapho should imitate even if Hermes implements it differently. ([OpenAI GitHub](https://openai.github.io/openai-agents-python/tracing/))
+
+---
+
+# **Phase 9: Build Sapho evals**
+
+Sapho should not only feel better. It should be testable.
+
+Create:
+
+`/opt/data/evals/sapho/`
+
+Start with 20–40 golden tests.
+
+## **Example eval categories**
+
+### **Routing evals**
+
+Input:
+
+“I want to get healthier this year.”
+
+Expected:
+
+* Do not create TickTick task yet.  
+* Route to wiki/goals/open-loop clarification.  
+* Ask for concrete next action only if execution is requested.
+
+### **Memory evals**
+
+Input:
+
+“For the next two weeks I want shorter replies.”
+
+Expected:
+
+* Do not store permanently as stable memory.  
+* Treat as temporary preference or current-plan note.
+
+### **TickTick evals**
+
+Input:
+
+“Remind me to submit the form Friday.”
+
+Expected:
+
+* Create TickTick task.  
+* Assign Maintenance.  
+* Due Friday.  
+* Clear action verb.
+
+### **Wiki evals**
+
+Input:
+
+“We decided Sapho should not use emojis by default.”
+
+Expected:
+
+* Update decision log and/or memory depending on whether this is stable.  
+* Do not bury in open loops.
+
+### **Cron evals**
+
+Input:
+
+“Add a weekly check-in for relationship clarity.”
+
+Expected:
+
+* Check for overlap with existing relationship/fatherhood clarity prompt.  
+* Avoid duplicate cron job unless role is distinct.
+
+OpenAI’s evaluation guidance frames evals as structured tests for measuring accuracy, reliability, and performance despite AI variability, using objectives, datasets, metrics, and iteration. ([OpenAI Developers](https://developers.openai.com/api/docs/guides/evaluation-best-practices))
+
+---
+
+# **Phase 10: Add risk gates and human approval levels**
+
+Sapho needs an autonomy ladder.
+
+OpenAI’s guardrails and human-review guidance separates automatic checks from approval decisions; human review is especially relevant before sensitive side effects like edits, cancellations, shell commands, or sensitive MCP actions. ([OpenAI Developers](https://developers.openai.com/api/docs/guides/agents/guardrails-approvals))
+
+## **Proposed autonomy levels**
+
+### **Level 0 — Advisory only**
+
+Sapho may explain, critique, or suggest.
+
+Examples:
+
+* mental-health support  
+* relationship interpretation  
+* financial strategy  
+* legal/immigration-related interpretation
+
+### **Level 1 — Draft only**
+
+Sapho may prepare text but not send or apply.
+
+Examples:
+
+* email drafts  
+* calendar proposals  
+* budget recommendations  
+* wiki patch proposals
+
+### **Level 2 — Apply with approval**
+
+Sapho may make changes after showing a diff or summary.
+
+Examples:
+
+* editing wiki pages  
+* updating skills  
+* creating cron jobs  
+* modifying TickTick projects  
+* moving tasks
+
+### **Level 3 — Auto-apply low-risk actions**
+
+Sapho may act without approval only when low-risk and reversible.
+
+Examples:
+
+* tagging local notes  
+* generating dashboard  
+* running backup  
+* creating local logs
+
+### **Level 4 — Never automatic**
+
+Sapho should not autonomously perform:
+
+* irreversible deletions  
+* sending sensitive messages  
+* spending money  
+* making medical/legal/financial commitments  
+* changing system credentials  
+* high-impact personal decisions
+
+This protects Sapho from “excessive agency,” which OWASP lists as one of the 2025 LLM application risks, alongside prompt injection, sensitive information disclosure, supply-chain risk, improper output handling, vector/embedding weaknesses, and misinformation. ([OWASP Foundation](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf?utm_source=chatgpt.com))
+
+NIST’s Generative AI Profile also frames AI risk management as something that should be incorporated into design, development, use, and evaluation—not bolted on afterward. ([NIST](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence))
+
+---
+
+# **Phase 11: Harden MCP / tool boundaries**
+
+Sapho/Hermes uses external tools, so tool access should become explicit.
+
+MCP is becoming a major standard for connecting agents to tools and data; the official MCP repository contains the specification, schema, and official docs, and the 2026 roadmap emphasizes production use, agent workflows, governance, and enterprise readiness. ([GitHub](https://github.com/modelcontextprotocol/modelcontextprotocol))
+
+## **Add a tool registry**
+
+Create:
+
+`/opt/data/wiki/concepts/tool-registry.md`
+
+Each tool gets:
+
+tool:  
+purpose:  
+allowed\_actions:  
+forbidden\_actions:  
+requires\_approval:  
+data\_access:  
+risk\_level:  
+logs\_to:  
+rollback\_method:
+
+Example:
+
+tool: TickTick  
+purpose: execution tasks  
+allowed\_actions:  
+  \- create concrete tasks  
+  \- reschedule tasks  
+  \- archive stale tasks with approval  
+forbidden\_actions:  
+  \- store broad goals  
+  \- store therapy-like reflections  
+requires\_approval:  
+  \- deleting tasks  
+  \- bulk moving tasks  
+risk\_level: medium
+
+This turns tool use into governed behavior instead of vibes.
+
+---
+
+# **Phase 12: Build the Sapho dashboard as a control panel, not another wiki**
+
+The dashboard should not become a second wiki.
+
+It should answer:
+
+**“What matters now, what is stuck, what changed, and what needs Jenffry’s attention?”**
+
+Suggested dashboard sections:
+
+\# Sapho Dashboard
+
+\#\# Today  
+\- One meaningful task  
+\- One quick win  
+\- Energy/status note
+
+\#\# This Week  
+\- Top 3 priorities  
+\- One protected rhythm  
+\- One thing to avoid
+
+\#\# Life Areas  
+Health:  
+Relationships:  
+Finances:  
+Career:  
+Leisure:  
+Maintenance:
+
+\#\# Open Loops Needing Attention  
+Maximum 5\.
+
+\#\# Recently Decided  
+Latest 3 decisions.
+
+\#\# Stale / Needs Pruning  
+Tasks, loops, pages, cron jobs.
+
+\#\# System Health  
+Backups:  
+Cron:  
+Wiki:  
+Memory:  
+TickTick:
+
+Do not show everything. Show the few things that matter.
+
+---
+
+# **Phase 13: Add a voice-output policy**
+
+The final part of the conversation identified a practical issue: long voice notes can get cut off.
+
+Sapho should have an output policy:
+
+## **Voice policy**
+
+| Reply type | Voice behavior |
+| ----- | ----- |
+| Short answer | Voice note okay |
+| Medium answer | Voice summary \+ full text |
+| Long answer | Text full answer \+ short voice summary |
+| Very long answer | Text sections \+ optional chunked audio |
+| Technical plan | Text-first |
+| Emotional support | Short voice-first, then text if useful |
+
+Default:
+
+**Long Sapho answers should be text-first with a short audio summary, not one giant voice note.**
+
+This is a small upgrade with high daily usefulness.
+
+---
+
+# **New powerful upgrades beyond the critique**
+
+These are the upgrades I would add beyond what the conversation already covered.
+
+## **1\. Context compiler**
+
+Before every serious Sapho run, generate a compact context pack:
+
+\# Context Pack
+
+User:  
+Current phase:  
+Relevant life areas:  
+Current plan excerpt:  
+Open loops relevant to request:  
+Recent decisions:  
+Relevant skills:  
+Tool permissions:  
+Do not load:
+
+This prevents Sapho from loading too much.
+
+The compiler should be task-aware:
+
+* finance request → finance context \+ current plan \+ finance skill  
+* relationship request → relationship context \+ boundaries \+ relevant open loops  
+* system request → Hermes/platform docs \+ source-of-truth registry  
+* execution request → TickTick rules \+ current plan
+
+## **2\. Open-loop aging system**
+
+Every open loop gets:
+
+created:  
+last\_touched:  
+status:  
+area:  
+decision\_needed:  
+next\_review:
+
+Then Sapho can flag:
+
+* loops older than 30 days  
+* loops with no next review  
+* loops that are actually decisions  
+* loops that should be parked
+
+## **3\. Duplicate detector**
+
+A weekly local script compares:
+
+* wiki pages  
+* skill references  
+* cron prompts  
+* memory entries
+
+It flags possible duplicates like:
+
+* same rule in skill and wiki  
+* same review question in two cron jobs  
+* same current priority in `current-plan` and `focus-map`  
+* stale backup pages appearing in normal search
+
+## **4\. Sapho diff mode**
+
+Before editing important files, Sapho should produce:
+
+Proposed change:  
+Files affected:  
+Why:  
+Risk:  
+Rollback:  
+Diff:
+
+Then apply only after approval for medium/high-risk edits.
+
+## **5\. Personal operating metrics**
+
+Track a small set of system health metrics:
+
+* number of active open loops  
+* number of stale TickTick tasks  
+* number of active cron jobs  
+* number of skills over size threshold  
+* number of wiki pages not reviewed in 90 days  
+* number of memory entries marked evolving  
+* number of failed cron runs  
+* number of user corrections per week
+
+This turns “Sapho feels bloated” into measurable evidence.
+
+## **6\. Skill test cases**
+
+Each important skill gets 5–10 examples:
+
+Input:  
+Expected behavior:  
+Wrong behavior:  
+Reason:
+
+This makes skills maintainable.
+
+## **7\. Model-routing policy**
+
+Not all jobs need the same model.
+
+Create a matrix:
+
+| Work type | Model class | Reason |
+| ----- | ----- | ----- |
+| Mechanical cleanup | small/cheap | low reasoning |
+| Sensitive relationship/mental health support | strongest/reliable | judgment matters |
+| Wiki rewrite | strong writing/reasoning | avoid drift |
+| Cron linting | deterministic script first | avoid model dependence |
+| Deep system audit | strongest reasoning | complex architecture |
+| TickTick cleanup | medium \+ approval | side effects |
+
+## **8\. Evidence-linked wiki updates**
+
+Every important wiki update should link to:
+
+* raw source  
+* chat summary  
+* decision log  
+* file diff  
+* run ledger entry
+
+This helps Sapho avoid inventing continuity.
+
+## **9\. Sensitive-domain boundaries**
+
+For Health, Relationships, Finances, and Maintenance/legal-adjacent items, Sapho should separate:
+
+* support  
+* planning  
+* documentation  
+* professional advice boundary  
+* crisis/escalation boundary
+
+Especially for mental health, Sapho should help with grounding, structure, and reflection, but not pretend to be a therapist or doctor.
+
+## **10\. Shadow mode for new automations**
+
+New cron jobs should run in shadow mode first.
+
+Shadow mode means:
+
+* generate output locally  
+* do not send to user  
+* do not change tools  
+* log what would have happened  
+* review after 1–2 cycles
+
+Only then promote to active.
+
+## **11\. Backup search exclusion**
+
+Backups are useful, but they should not pollute normal retrieval.
+
+Add a rule:
+
+* normal searches exclude `/backups/`  
+* audit searches may include `/backups/`  
+* recovery searches explicitly include `/backups/`
+
+This prevents old pages from competing with live pages.
+
+## **12\. “One-page Sapho map”**
+
+Create a human-readable architecture file:
+
+`/opt/data/wiki/sapho-system-map.md`
+
+It should show:
+
+Sapho \= identity/persona  
+Memory \= tiny durable facts  
+Wiki \= structured continuity  
+Skills \= procedures  
+Cron \= recurrence  
+TickTick \= execution  
+Raw \= evidence  
+Backups \= history  
+Logs \= runtime truth  
+Evals \= quality tests  
+Dashboard \= human control panel
+
+This is the page future Jenffry reads when the system feels complicated.
+
+---
+
+# **Practical implementation order**
+
+## **Week 1: Stabilize the architecture**
+
+1. Create `source-of-truth-registry.md`.  
+2. Create `sapho-system-map.md`.  
+3. Add page roles to the main planning pages.  
+4. Decide whether `focus-map.md` stays separate or becomes part of `current-plan.md`.  
+5. Restructure `open-loops.md` into active, parked, decision-needed, information-needed, system, and retired.
+
+## **Week 2: Reduce bloat**
+
+1. Compress `current-plan.md`.  
+2. Clean `goals-cascade.md` into pure cascade format.  
+3. Mark `life-rebuild.md` as high-level narrative, not active steering.  
+4. Audit skills for “manual bloat.”  
+5. Move long skill explanations into references.
+
+## **Week 3: Make cron safer**
+
+1. Create `cron-registry.md`.  
+2. Categorize all cron jobs.  
+3. Identify overlapping reflection jobs.  
+4. Add prompt sanitizer/linter.  
+5. Add shadow mode for new cron jobs.  
+6. Add voice-output policy to relevant prompts.
+
+## **Week 4: Protect execution**
+
+1. Add TickTick action firewall.  
+2. Run stale task cleanup.  
+3. Move vague tasks back to wiki/open-loops.  
+4. Define task naming standard.  
+5. Add weekly TickTick hygiene rule.
+
+## **Week 5: Add observability**
+
+1. Create agent run ledger.  
+2. Log meaningful tool calls and file changes.  
+3. Add failure logs for cron.  
+4. Add system health metrics.  
+5. Add dashboard section for system health.
+
+## **Week 6: Add evals and guardrails**
+
+1. Create first 20 Sapho evals.  
+2. Add routing evals.  
+3. Add TickTick evals.  
+4. Add memory evals.  
+5. Add wiki/source-of-truth evals.  
+6. Add autonomy levels and approval rules.  
+7. Add tool registry.
+
+---
+
+# **The upgraded Sapho architecture**
+
+Sapho should evolve from this:
+
+Persona  
+Memory  
+Wiki  
+Skills  
+Cron  
+TickTick  
+Raw  
+Backups
+
+To this:
+
+Identity  
+  SOUL.md
+
+Durable preference  
+  Memory
+
+Structured continuity  
+  Wiki
+
+Procedures  
+  Skills
+
+Recurrence  
+  Cron
+
+Execution  
+  TickTick
+
+Evidence  
+  Raw
+
+History  
+  Backups
+
+Runtime truth  
+  Agent run ledger / traces
+
+Quality control  
+  Evals
+
+Safety  
+  Guardrails \+ approval levels
+
+Human interface  
+  Dashboard \+ voice policy
+
+That is the real Sapho 2.0 upgrade.
+
+---
+
+# **Highest-leverage changes**
+
+The five best upgrades are:
+
+1. **Source-of-truth registry**  
+   Prevents duplication across memory, wiki, skills, cron, and TickTick.  
+2. **Context compiler**  
+   Keeps Sapho focused and prevents context overload.  
+3. **Run ledger / flight recorder**  
+   Makes Sapho debuggable and trustworthy.  
+4. **Eval suite**  
+   Lets Sapho improve without relying only on vibes.  
+5. **Autonomy ladder**  
+   Makes tool use safer and clearer.
+
+Final recommendation: start with the **source-of-truth registry**, then compress the planning pages, then add the run ledger. Those three moves will make every later upgrade cleaner.</pre></div>
+  </div>
+</details>
 <details class='page-card' id='page-raw-transcripts-family-relationship-clarity-intake-2026-05-11-md' data-page-id='raw/transcripts/family-relationship-clarity-intake-2026-05-11.md'>
   <summary>
     <div>
@@ -7171,7 +8582,7 @@ Open questions and limitations. The exact formal status of the labels **Mentat-T
     Public URL: https://jenffry90-arch.github.io/sapho-workspace-dashboard/ · Full live wiki mode. Backup mirrors are excluded from this view. If you want archive mirrors in the graph too, I can add a toggle.
   </footer>
 </main>
-<script id='wiki-graph-data' type='application/json'>{"nodes": [{"id": "SCHEMA.md", "dom_id": "page-schema-md", "title": "Wiki Schema", "category": "root", "excerpt": "This wiki stores structured continuity for Jenffry and Sapho: current strategy, life-area context, decisions, open loops, dashboard-facing summaries, and raw source material. areas/ — life-area pages and subpages. This is the main personal operating map. syste", "degree": 0, "radius": 5}, {"id": "areas/career/business.md", "dom_id": "page-areas-career-business-md", "title": "Business", "category": "areas", "excerpt": "Status: Possibility space, not the lead execution domain. Current priority: preserve business-development option value without overcommitting. Active signals: Blaze Creative Agency, AI-agent work, proof assets, income leverage. Open loops: define business expe", "degree": 3, "radius": 8}, {"id": "areas/career/work/princess-storybook.md", "dom_id": "page-areas-career-work-princess-storybook-md", "title": "Princess Storybook", "category": "areas", "excerpt": "Status: Active work project page. Current priority: scratch build; references only, not base. Active signals: reusable foundations/components/source-backed patterns; local fonts, not Princess/Typekit runtime URLs. Open loops: continue Storybook build from save", "degree": 3, "radius": 8}, {"id": "areas/career/work/princess-ux.md", "dom_id": "page-areas-career-work-princess-ux-md", "title": "Princess UX", "category": "areas", "excerpt": "Status: Active work project context. Current priority: keep Princess UX/UI context available without mixing Jira with personal TickTick clutter. Active signals: UX/UI work clusters, Princess planning, AI/workflow support. Open loops: preserve Princess-specific", "degree": 9, "radius": 14}, {"id": "areas/career/work.md", "dom_id": "page-areas-career-work-md", "title": "Work", "category": "areas", "excerpt": "Status: Active career execution domain. Current priority: Princess UX/UI quality, work leverage, and sustainable senior UX growth. Active signals: Princess UX, Storybook, Jira/TickTick boundaries, AI-assisted work leverage. Open loops: avoid after-hours spillo", "degree": 11, "radius": 16}, {"id": "areas/career.md", "dom_id": "page-areas-career-md", "title": "Career", "category": "areas", "excerpt": "Status: Career splits into Work and Business; AI-agent work can be work leverage, hobby, or business possibility depending context. Current priority: Princess UX/work quality first, business-development possibility second. Active signals: senior UX growth, Pri", "degree": 15, "radius": 17}, {"id": "areas/finances/cash-flow.md", "dom_id": "page-areas-finances-cash-flow-md", "title": "Cash Flow", "category": "areas", "excerpt": "Status: Active operational finance page. Current priority: weekly/monthly budget reality, obligations, and guardrails. Active signals: income assumptions, monthly budget, weekly budget equivalent, May 2026 status. Open loops: verify forward assumptions and mai", "degree": 4, "radius": 9}, {"id": "areas/finances/investing.md", "dom_id": "page-areas-finances-investing-md", "title": "Investing", "category": "areas", "excerpt": "Status: Visible but not the current tactical priority. Current priority: keep long-term investing direction from distracting from cash-flow stability. Active signals: emergency fund, 401k, longer-term financial freedom track. Open loops: define later after cas", "degree": 3, "radius": 8}, {"id": "areas/finances.md", "dom_id": "page-areas-finances-md", "title": "Finances", "category": "areas", "excerpt": "Status: Cash-flow is the active finance front; investing remains visible but secondary. Current priority: prevent budget drift and credit-card interest while preserving long-term financial direction. Active signals: one-income household, weekly operating numbe", "degree": 14, "radius": 17}, {"id": "areas/health/mental-health.md", "dom_id": "page-areas-health-mental-health-md", "title": "Mental Health", "category": "areas", "excerpt": "Status: Top current life priority. Current priority: reduce observer-mode/self-monitoring and build presence/future excitement. Active signals: rumination, presence in conversation/pickleball, quicker return to the present. Open loops: continue therapy/meditat", "degree": 13, "radius": 17}, {"id": "areas/health/physical-health.md", "dom_id": "page-areas-health-physical-health-md", "title": "Physical Health", "category": "areas", "excerpt": "Status: Active support system for mental health, capacity, body composition, and strength. Current priority: gym consistency, body baseline, sleep, food, medical/lab follow-up. Active signals: Hevy workouts, weight/body composition, sleep quality, energy, test", "degree": 12, "radius": 17}, {"id": "areas/health.md", "dom_id": "page-areas-health-md", "title": "Health", "category": "areas", "excerpt": "Status: Mental health is the leading life priority; physical health supports stability and capacity. Current priority: keep the Health area cleanly split into mental health and physical health. Active signals: energy, sleep, rumination, gym consistency, medica", "degree": 8, "radius": 13}, {"id": "areas/leisure/hobbies.md", "dom_id": "page-areas-leisure-hobbies-md", "title": "Hobbies", "category": "areas", "excerpt": "Status: Active restoration subarea. Current priority: preserve play and interest without over-systematizing it. Active signals: windsurfing, gaming, VR, fishing, AI-agent tinkering when hobby-framed. Open loops: protect hobbies as capacity/future-excitement si", "degree": 3, "radius": 8}, {"id": "areas/leisure/outings.md", "dom_id": "page-areas-leisure-outings-md", "title": "Outings", "category": "areas", "excerpt": "Status: Active idea backlog for chosen fun/social/family outings. Current priority: keep ideas available without making TickTick noisy. Active signals: weekend ideas, monthly outings, concerts, events, movie/comic-store possibilities. Open loops: choose concre", "degree": 3, "radius": 8}, {"id": "areas/leisure/social.md", "dom_id": "page-areas-leisure-social-md", "title": "Social", "category": "areas", "excerpt": "Status: Active leisure subarea. Current priority: social rebuilding and invitations without making social life an admin project. Active signals: friends, D&D/tabletop leads, meetups, conversation confidence. Open loops: choose concrete social experiments when ", "degree": 4, "radius": 9}, {"id": "areas/leisure.md", "dom_id": "page-areas-leisure-md", "title": "Leisure", "category": "areas", "excerpt": "Status: Restoration and future-excitement domain. Current priority: protect social/fun without turning it into productivity clutter. Active signals: weekend ideas, outings, hobbies, social rebuilding. Open loops: keep ideas in wiki; TickTick gets only chosen c", "degree": 17, "radius": 17}, {"id": "areas/life-admin.md", "dom_id": "page-areas-life-admin-md", "title": "Life Admin", "category": "areas", "excerpt": "Status: Maintenance renamed to Life Admin. Current priority: immigration/citizenship and other concrete admin obligations without over-fragmenting. Active signals: green card / USCIS follow-up, admin obligations, home/system maintenance. Open loops: citizenshi", "degree": 10, "radius": 15}, {"id": "areas/relationships/fatherhood.md", "dom_id": "page-areas-relationships-fatherhood-md", "title": "Fatherhood", "category": "areas", "excerpt": "Status: Active clarity domain. Current priority: protect fatherhood presence and relationship with Nolan. Active signals: father role, Nolan context, regrets to avoid, development/presence questions. Open loops: fatherhood clarity and future structure question", "degree": 3, "radius": 8}, {"id": "areas/relationships/partner.md", "dom_id": "page-areas-relationships-partner-md", "title": "Partner", "category": "areas", "excerpt": "Status: Active clarity domain. Current priority: understand the partner/marriage path without collapsing it into fatherhood. Active signals: Aubrey context, repair/stay/leave questions, future structure. Open loops: therapist exercise and relationship clarity ", "degree": 3, "radius": 8}, {"id": "areas/relationships.md", "dom_id": "page-areas-relationships-md", "title": "Relationships", "category": "areas", "excerpt": "Status: Relationship clarity is active and sensitive; separate partner questions from fatherhood questions. Current priority: maintain clean distinction between partner/marriage and fatherhood. Active signals: Aubrey context, Nolan context, future-family struc", "degree": 19, "radius": 17}, {"id": "entities/jenffry.md", "dom_id": "page-entities-jenffry-md", "title": "Jenffry", "category": "entities", "excerpt": "This page is the high-level orientation page for Jenffry: who he is, what matters, what he is building, and what context Hermes should preserve over time. Name: Jenffry. Timezone: America/New_York. Preferred mobile channel: Telegram. Jenffry is not an emoji us", "degree": 15, "radius": 17}, {"id": "inbox/brain-dump-sessions.md", "dom_id": "page-inbox-brain-dump-sessions-md", "title": "Brain Dump Sessions", "category": "inbox", "excerpt": "This page is the collection point for Jenffry's freeform brain dump sessions. When Jenffry explicitly says \"this is a brain dump session\" or clearly identifies a message as a brain dump, capture what follows here first, without prematurely organizing, judging,", "degree": 7, "radius": 12}, {"id": "inbox/perception-log.md", "dom_id": "page-inbox-perception-log-md", "title": "Perception Log", "category": "inbox", "excerpt": "This page is a lightweight capture point for Jenffry's momentary inner-state dumps: emotions, body sensations, energy, stress, mood, pain/tension, clarity/fog, urges, random perceptions, and other felt signals. The scope is intentionally broad. It is not only ", "degree": 7, "radius": 12}, {"id": "index.md", "dom_id": "page-index-md", "title": "Wiki Index", "category": "root", "excerpt": "health mental-health physical-health relationships partner fatherhood finances cash-flow investing career work princess-ux princess-storybook business leisure social hobbies outings life-admin current-strategy open-loops decision-log sapho-operating-system das", "degree": 28, "radius": 17}, {"id": "log.md", "dom_id": "page-log-md", "title": "Wiki Log", "category": "root", "excerpt": "> Chronological record of wiki actions. > Format: ## [YYYY-MM-DD] action | subject > Actions: create, ingest, update, query, lint, archive, delete Renamed/relinked main wiki life-area pages to match the final taxonomy: health, relationships, finances, career, ", "degree": 1, "radius": 6}, {"id": "plans/wiki-life-area-migration-2026-05-20.md", "dom_id": "page-plans-wiki-life-area-migration-2026-05-20-md", "title": "Wiki Life-Area Migration Plan", "category": "plans", "excerpt": "Reorganize Jenffry's wiki around a cleaner life-area spine while preserving all existing content and keeping the hosted Sapho dashboard fed from real wiki pages. Keep a review log only if dated weekly history proves useful later; do not create a separate revie", "degree": 1, "radius": 6}, {"id": "raw/finance/budget-rebuild-2026-05-14.md", "dom_id": "page-raw-finance-budget-rebuild-2026-05-14-md", "title": "Budget rebuild from transaction export — 2026-05-14", "category": "raw", "excerpt": "Source files: /opt/data/cache/documents/doc_68a36823b11c_2026-05-14T15_44_57.189Z-transactions.csv — April 2026 export, 205 transactions. /opt/data/cache/documents/doc_2d5b306ad004_2026-05-14T15_49_43.994Z-transactions.csv — full export, 3,300 transactions, da", "degree": 0, "radius": 5}, {"id": "raw/reference/life-area-frameworks-2026-05-20.md", "dom_id": "page-raw-reference-life-area-frameworks-2026-05-20-md", "title": "Life Area Frameworks", "category": "raw", "excerpt": "This page captures common life-area models other people use, so Jenffry's own taxonomy can stay grounded in outside patterns instead of feeling invented from scratch. Most life-area systems use 5 to 10 domains. They usually include some combination of: health ", "degree": 0, "radius": 5}, {"id": "raw/transcripts/family-relationship-clarity-intake-2026-05-11.md", "dom_id": "page-raw-transcripts-family-relationship-clarity-intake-2026-05-11-md", "title": "Family / relationship / fatherhood clarity intake — 2026-05-11", "category": "raw", "excerpt": "Source: Telegram voice transcript from Jenffry. Key framework: For this goal area, the 12-month goal cannot be fully defined today because the work itself is gaining clarity. The equivalent of “going to the gym” for this area is doing clarity exercises/session", "degree": 0, "radius": 5}, {"id": "raw/transcripts/goals-layer-voice-intake-2026-05-10.md", "dom_id": "page-raw-transcripts-goals-layer-voice-intake-2026-05-10-md", "title": "Goals-layer voice intake — 2026-05-10", "category": "raw", "excerpt": "Source: Telegram voice message from Jenffry. Purpose: Raw source for solidifying Jenffry's goals layer. Preserve as evidence; synthesize into wiki pages separately. Okay, so two notes based on something that you said, and that core meditation, attention. You k", "degree": 0, "radius": 5}, {"id": "raw/transcripts/jenffry-personal-context-export-2026-05-08.md", "dom_id": "page-raw-transcripts-jenffry-personal-context-export-2026-05-08-md", "title": "Jenffry Personal Context Export 2026 05 08", "category": "raw", "excerpt": "Personal context export for Hermes. This file is only about Jenffry: facts, preferences, priorities, life context, health, family, work, money, hobbies, goals, and unresolved personal themes. Name: Jenffry. Timezone: America/New_York. Preferred address in prio", "degree": 0, "radius": 5}, {"id": "raw/transcripts/mental-health-goal-layer-2026-05-11.md", "dom_id": "page-raw-transcripts-mental-health-goal-layer-2026-05-11-md", "title": "Mental-health goal-layer voice intake — 2026-05-11", "category": "raw", "excerpt": "Source: Telegram voice transcript from Jenffry. Jenffry described the 12-month mental-health goal as being “back to normal” but stronger because the crisis happened. Key points: A current distressing pattern is “observer mode” / dissociation-like experience: l", "degree": 0, "radius": 5}, {"id": "raw/transcripts/mental-health-practices-2026-05-11.md", "dom_id": "page-raw-transcripts-mental-health-practices-2026-05-11-md", "title": "Mental-health practices voice intake — 2026-05-11", "category": "raw", "excerpt": "Source: Telegram voice transcript from Jenffry. Jenffry clarified the practice layer for the 12-month mental-health goal: Continue seeing his therapist. Meditate four times per week, typically tied to gym visits. Do a weekly activity, and additional activities", "degree": 0, "radius": 5}, {"id": "raw/transcripts/mentat-personality-profile-2026-05-10.md", "dom_id": "page-raw-transcripts-mentat-personality-profile-2026-05-10-md", "title": "Mentat Personality in Frank Herbert’s Dune", "category": "raw", "excerpt": "In Frank Herbert’s core canon, Mentats are not emotionless “human computers.” They are disciplined analysts whose personalities are shaped by training, duty, and the institutional role they occupy. Herbert’s clearest statement comes when Jessica tells Thufir H", "degree": 0, "radius": 5}, {"id": "system/current-strategy.md", "dom_id": "page-system-current-strategy-md", "title": "Current Strategy", "category": "system", "excerpt": "Status: Main strategy page merging current plan, focus map, and goals cascade. Current priority: clarity-first execution with mental health leading and family prioritized when conflicts arise. Active signals: current plan, primary focus, goals cascade, life-ar", "degree": 31, "radius": 17}, {"id": "system/dashboard.md", "dom_id": "page-system-dashboard-md", "title": "Dashboard", "category": "system", "excerpt": "Status: Hosted GitHub Pages dashboard shows the full live wiki with graph view and expandable page cards. Current priority: feed the dashboard from real wiki pages through Dashboard summary sections. Active signals: current strategy, life-area summaries, open ", "degree": 19, "radius": 17}, {"id": "system/decision-log.md", "dom_id": "page-system-decision-log-md", "title": "Decision Log", "category": "system", "excerpt": "Status: Active decision history. Current priority: capture actual decisions, not every idea. Active signals: strategy, dashboard, taxonomy, task-system decisions. Open loops: none; new decisions should be appended here. Next concrete move: add migration approv", "degree": 24, "radius": 17}, {"id": "system/open-loops.md", "dom_id": "page-system-open-loops-md", "title": "Open Loops", "category": "system", "excerpt": "Status: Active unresolved-item register. Current priority: keep unresolved questions visible without turning every idea into a task. Active signals: pending decisions, unfinished setup, future follow-ups. Open loops: see source sections below. Next concrete mo", "degree": 27, "radius": 17}, {"id": "system/sapho-operating-system.md", "dom_id": "page-system-sapho-operating-system-md", "title": "Sapho Operating System", "category": "system", "excerpt": "Status: Main operating-system page for Sapho continuity, persona, planning style, memory/wiki/skill use, and anti-clutter rules. Current priority: reduce fog and increase agency without bloating process. Active signals: continuity system, planning style, Menta", "degree": 27, "radius": 17}], "links": [{"source": "areas/career/business.md", "target": "areas/career.md", "weight": 1}, {"source": "areas/career/work/princess-ux.md", "target": "areas/career.md", "weight": 1}, {"source": "areas/career/work/princess-ux.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/career/work/princess-ux.md", "target": "system/open-loops.md", "weight": 1}, {"source": "areas/career/work.md", "target": "areas/career/work/princess-ux.md", "weight": 1}, {"source": "areas/career/work.md", "target": "areas/career/work/princess-storybook.md", "weight": 1}, {"source": "areas/career/work.md", "target": "areas/career.md", "weight": 1}, {"source": "areas/career/work.md", "target": "areas/life-admin.md", "weight": 1}, {"source": "areas/career/work.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/career/work.md", "target": "system/open-loops.md", "weight": 1}, {"source": "areas/career.md", "target": "areas/career/work.md", "weight": 1}, {"source": "areas/career.md", "target": "areas/career/business.md", "weight": 1}, {"source": "areas/career.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/career.md", "target": "areas/finances.md", "weight": 1}, {"source": "areas/career.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "areas/finances/cash-flow.md", "target": "areas/finances.md", "weight": 1}, {"source": "areas/finances/investing.md", "target": "areas/finances/cash-flow.md", "weight": 1}, {"source": "areas/finances.md", "target": "areas/finances/cash-flow.md", "weight": 1}, {"source": "areas/finances.md", "target": "areas/finances/investing.md", "weight": 1}, {"source": "areas/finances.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/finances.md", "target": "areas/career.md", "weight": 1}, {"source": "areas/finances.md", "target": "system/open-loops.md", "weight": 1}, {"source": "areas/health/mental-health.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "areas/health/mental-health.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/health/mental-health.md", "target": "system/open-loops.md", "weight": 1}, {"source": "areas/health/mental-health.md", "target": "areas/relationships.md", "weight": 1}, {"source": "areas/health/physical-health.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/health/physical-health.md", "target": "system/open-loops.md", "weight": 1}, {"source": "areas/health.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "areas/health.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "areas/health.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "areas/health.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/leisure/hobbies.md", "target": "areas/leisure.md", "weight": 1}, {"source": "areas/leisure/outings.md", "target": "areas/leisure.md", "weight": 1}, {"source": "areas/leisure/social.md", "target": "areas/leisure.md", "weight": 1}, {"source": "areas/leisure.md", "target": "areas/leisure/social.md", "weight": 1}, {"source": "areas/leisure.md", "target": "areas/leisure/hobbies.md", "weight": 1}, {"source": "areas/leisure.md", "target": "areas/leisure/outings.md", "weight": 1}, {"source": "areas/leisure.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/leisure.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "areas/leisure.md", "target": "areas/relationships.md", "weight": 1}, {"source": "areas/life-admin.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/life-admin.md", "target": "system/open-loops.md", "weight": 1}, {"source": "areas/life-admin.md", "target": "areas/career/work.md", "weight": 1}, {"source": "areas/relationships/fatherhood.md", "target": "areas/relationships.md", "weight": 1}, {"source": "areas/relationships/partner.md", "target": "areas/relationships.md", "weight": 1}, {"source": "areas/relationships.md", "target": "areas/relationships/partner.md", "weight": 1}, {"source": "areas/relationships.md", "target": "areas/relationships/fatherhood.md", "weight": 1}, {"source": "areas/relationships.md", "target": "areas/leisure/social.md", "weight": 1}, {"source": "areas/relationships.md", "target": "areas/leisure.md", "weight": 1}, {"source": "areas/relationships.md", "target": "entities/jenffry.md", "weight": 1}, {"source": "areas/relationships.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/relationships.md", "target": "system/open-loops.md", "weight": 1}, {"source": "areas/relationships.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "system/open-loops.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "system/decision-log.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "areas/relationships.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "areas/finances.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "areas/career.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "areas/leisure.md", "weight": 1}, {"source": "inbox/brain-dump-sessions.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "inbox/brain-dump-sessions.md", "target": "system/decision-log.md", "weight": 1}, {"source": "inbox/brain-dump-sessions.md", "target": "system/open-loops.md", "weight": 1}, {"source": "inbox/brain-dump-sessions.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "inbox/perception-log.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "inbox/perception-log.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "inbox/perception-log.md", "target": "system/dashboard.md", "weight": 1}, {"source": "inbox/perception-log.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "index.md", "target": "areas/health.md", "weight": 1}, {"source": "index.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "index.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "index.md", "target": "areas/relationships.md", "weight": 1}, {"source": "index.md", "target": "areas/relationships/partner.md", "weight": 1}, {"source": "index.md", "target": "areas/relationships/fatherhood.md", "weight": 1}, {"source": "index.md", "target": "areas/finances.md", "weight": 1}, {"source": "index.md", "target": "areas/finances/cash-flow.md", "weight": 1}, {"source": "index.md", "target": "areas/finances/investing.md", "weight": 1}, {"source": "index.md", "target": "areas/career.md", "weight": 1}, {"source": "index.md", "target": "areas/career/work.md", "weight": 1}, {"source": "index.md", "target": "areas/career/work/princess-ux.md", "weight": 1}, {"source": "index.md", "target": "areas/career/work/princess-storybook.md", "weight": 1}, {"source": "index.md", "target": "areas/career/business.md", "weight": 1}, {"source": "index.md", "target": "areas/leisure.md", "weight": 1}, {"source": "index.md", "target": "areas/leisure/social.md", "weight": 1}, {"source": "index.md", "target": "areas/leisure/hobbies.md", "weight": 1}, {"source": "index.md", "target": "areas/leisure/outings.md", "weight": 1}, {"source": "index.md", "target": "areas/life-admin.md", "weight": 1}, {"source": "index.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "index.md", "target": "system/open-loops.md", "weight": 1}, {"source": "index.md", "target": "system/decision-log.md", "weight": 1}, {"source": "index.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "index.md", "target": "system/dashboard.md", "weight": 1}, {"source": "index.md", "target": "inbox/brain-dump-sessions.md", "weight": 1}, {"source": "index.md", "target": "inbox/perception-log.md", "weight": 1}, {"source": "index.md", "target": "entities/jenffry.md", "weight": 1}, {"source": "index.md", "target": "plans/wiki-life-area-migration-2026-05-20.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/life-admin.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "system/open-loops.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "system/decision-log.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "entities/jenffry.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/career.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/finances.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "system/dashboard.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/leisure.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/relationships.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/career/work/princess-ux.md", "weight": 1}, {"source": "system/dashboard.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/health.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/relationships.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/finances.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/career.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/leisure.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/life-admin.md", "weight": 1}, {"source": "system/dashboard.md", "target": "system/open-loops.md", "weight": 1}, {"source": "system/dashboard.md", "target": "system/decision-log.md", "weight": 1}, {"source": "system/dashboard.md", "target": "log.md", "weight": 1}, {"source": "system/dashboard.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/health.md", "weight": 1}, {"source": "system/decision-log.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "system/decision-log.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/relationships.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/life-admin.md", "weight": 1}, {"source": "system/decision-log.md", "target": "system/dashboard.md", "weight": 1}, {"source": "system/decision-log.md", "target": "system/open-loops.md", "weight": 1}, {"source": "system/decision-log.md", "target": "inbox/perception-log.md", "weight": 1}, {"source": "system/decision-log.md", "target": "inbox/brain-dump-sessions.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/career/work/princess-storybook.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/career/work/princess-ux.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/finances.md", "weight": 1}, {"source": "system/decision-log.md", "target": "entities/jenffry.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/career/work.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/leisure.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "system/open-loops.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "system/open-loops.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/life-admin.md", "weight": 1}, {"source": "system/open-loops.md", "target": "system/dashboard.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/career.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/career/work/princess-ux.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/finances.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/leisure.md", "weight": 1}, {"source": "system/open-loops.md", "target": "entities/jenffry.md", "weight": 1}, {"source": "system/open-loops.md", "target": "system/decision-log.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/relationships.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "system/decision-log.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "system/open-loops.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "entities/jenffry.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "inbox/brain-dump-sessions.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "inbox/perception-log.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/career/work.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "system/dashboard.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/health.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/relationships.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/finances.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/career.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/career/work/princess-ux.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/leisure.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/life-admin.md", "weight": 1}], "incoming": {"areas/career.md": 10, "system/current-strategy.md": 18, "system/open-loops.md": 14, "areas/career/work/princess-ux.md": 6, "areas/career/work/princess-storybook.md": 3, "areas/life-admin.md": 7, "areas/career/work.md": 5, "areas/career/business.md": 2, "areas/finances.md": 9, "system/sapho-operating-system.md": 10, "areas/finances/cash-flow.md": 3, "areas/finances/investing.md": 2, "areas/health/physical-health.md": 10, "areas/relationships.md": 11, "areas/health/mental-health.md": 9, "areas/leisure.md": 11, "areas/leisure/social.md": 3, "areas/leisure/hobbies.md": 2, "areas/leisure/outings.md": 2, "areas/relationships/partner.md": 2, "areas/relationships/fatherhood.md": 2, "entities/jenffry.md": 6, "system/decision-log.md": 7, "system/dashboard.md": 6, "areas/health.md": 4, "inbox/brain-dump-sessions.md": 3, "inbox/perception-log.md": 3, "plans/wiki-life-area-migration-2026-05-20.md": 1, "log.md": 1}, "outgoing": {"areas/career/business.md": 1, "areas/career/work/princess-ux.md": 3, "areas/career/work.md": 6, "areas/career.md": 5, "areas/finances/cash-flow.md": 1, "areas/finances/investing.md": 1, "areas/finances.md": 5, "areas/health/mental-health.md": 4, "areas/health/physical-health.md": 2, "areas/health.md": 4, "areas/leisure/hobbies.md": 1, "areas/leisure/outings.md": 1, "areas/leisure/social.md": 1, "areas/leisure.md": 6, "areas/life-admin.md": 3, "areas/relationships/fatherhood.md": 1, "areas/relationships/partner.md": 1, "areas/relationships.md": 8, "entities/jenffry.md": 9, "inbox/brain-dump-sessions.md": 4, "inbox/perception-log.md": 4, "index.md": 28, "system/current-strategy.md": 13, "system/dashboard.md": 13, "system/decision-log.md": 17, "system/open-loops.md": 13, "system/sapho-operating-system.md": 17}, "lookup": {"wikischema": "SCHEMA.md", "schemamd": "SCHEMA.md", "schema": "SCHEMA.md", "business": "areas/career/business.md", "areascareerbusinessmd": "areas/career/business.md", "businessmd": "areas/career/business.md", "princessstorybookmd": "areas/career/work/princess-storybook.md", "princessstorybook": "areas/career/work/princess-storybook.md", "areascareerworkprincessstorybookmd": "areas/career/work/princess-storybook.md", "princessux": "areas/career/work/princess-ux.md", "areascareerworkprincessuxmd": "areas/career/work/princess-ux.md", "princessuxmd": "areas/career/work/princess-ux.md", "work": "areas/career/work.md", "workmd": "areas/career/work.md", "areascareerworkmd": "areas/career/work.md", "career": "areas/career.md", "careermd": "areas/career.md", "areascareermd": "areas/career.md", "cashflow": "areas/finances/cash-flow.md", "areasfinancescashflowmd": "areas/finances/cash-flow.md", "cashflowmd": "areas/finances/cash-flow.md", "investing": "areas/finances/investing.md", "investingmd": "areas/finances/investing.md", "areasfinancesinvestingmd": "areas/finances/investing.md", "financesmd": "areas/finances.md", "finances": "areas/finances.md", "areasfinancesmd": "areas/finances.md", "mentalhealth": "areas/health/mental-health.md", "areashealthmentalhealthmd": "areas/health/mental-health.md", "mentalhealthmd": "areas/health/mental-health.md", "physicalhealth": "areas/health/physical-health.md", "physicalhealthmd": "areas/health/physical-health.md", "areashealthphysicalhealthmd": "areas/health/physical-health.md", "healthmd": "areas/health.md", "areashealthmd": "areas/health.md", "health": "areas/health.md", "hobbiesmd": "areas/leisure/hobbies.md", "hobbies": "areas/leisure/hobbies.md", "areasleisurehobbiesmd": "areas/leisure/hobbies.md", "outings": "areas/leisure/outings.md", "outingsmd": "areas/leisure/outings.md", "areasleisureoutingsmd": "areas/leisure/outings.md", "socialmd": "areas/leisure/social.md", "areasleisuresocialmd": "areas/leisure/social.md", "social": "areas/leisure/social.md", "leisure": "areas/leisure.md", "leisuremd": "areas/leisure.md", "areasleisuremd": "areas/leisure.md", "lifeadminmd": "areas/life-admin.md", "areaslifeadminmd": "areas/life-admin.md", "lifeadmin": "areas/life-admin.md", "areasrelationshipsfatherhoodmd": "areas/relationships/fatherhood.md", "fatherhood": "areas/relationships/fatherhood.md", "fatherhoodmd": "areas/relationships/fatherhood.md", "partnermd": "areas/relationships/partner.md", "partner": "areas/relationships/partner.md", "areasrelationshipspartnermd": "areas/relationships/partner.md", "areasrelationshipsmd": "areas/relationships.md", "relationships": "areas/relationships.md", "relationshipsmd": "areas/relationships.md", "entitiesjenffrymd": "entities/jenffry.md", "jenffrymd": "entities/jenffry.md", "jenffry": "entities/jenffry.md", "braindumpsessionsmd": "inbox/brain-dump-sessions.md", "inboxbraindumpsessionsmd": "inbox/brain-dump-sessions.md", "braindumpsessions": "inbox/brain-dump-sessions.md", "inboxperceptionlogmd": "inbox/perception-log.md", "perceptionlog": "inbox/perception-log.md", "perceptionlogmd": "inbox/perception-log.md", "indexmd": "index.md", "index": "index.md", "wikiindex": "index.md", "wikilog": "log.md", "logmd": "log.md", "log": "log.md", "planswikilifeareamigration20260520md": "plans/wiki-life-area-migration-2026-05-20.md", "wikilifeareamigrationplan": "plans/wiki-life-area-migration-2026-05-20.md", "wikilifeareamigration20260520md": "plans/wiki-life-area-migration-2026-05-20.md", "wikilifeareamigration20260520": "plans/wiki-life-area-migration-2026-05-20.md", "budgetrebuildfromtransactionexport20260514": "raw/finance/budget-rebuild-2026-05-14.md", "rawfinancebudgetrebuild20260514md": "raw/finance/budget-rebuild-2026-05-14.md", "budgetrebuild20260514": "raw/finance/budget-rebuild-2026-05-14.md", "budgetrebuild20260514md": "raw/finance/budget-rebuild-2026-05-14.md", "rawreferencelifeareaframeworks20260520md": "raw/reference/life-area-frameworks-2026-05-20.md", "lifeareaframeworks20260520md": "raw/reference/life-area-frameworks-2026-05-20.md", "lifeareaframeworks": "raw/reference/life-area-frameworks-2026-05-20.md", "lifeareaframeworks20260520": "raw/reference/life-area-frameworks-2026-05-20.md", "familyrelationshipfatherhoodclarityintake20260511": "raw/transcripts/family-relationship-clarity-intake-2026-05-11.md", "familyrelationshipclarityintake20260511md": "raw/transcripts/family-relationship-clarity-intake-2026-05-11.md", "familyrelationshipclarityintake20260511": "raw/transcripts/family-relationship-clarity-intake-2026-05-11.md", "rawtranscriptsfamilyrelationshipclarityintake20260511md": "raw/transcripts/family-relationship-clarity-intake-2026-05-11.md", "goalslayervoiceintake20260510": "raw/transcripts/goals-layer-voice-intake-2026-05-10.md", "rawtranscriptsgoalslayervoiceintake20260510md": "raw/transcripts/goals-layer-voice-intake-2026-05-10.md", "goalslayervoiceintake20260510md": "raw/transcripts/goals-layer-voice-intake-2026-05-10.md", "rawtranscriptsjenffrypersonalcontextexport20260508md": "raw/transcripts/jenffry-personal-context-export-2026-05-08.md", "jenffrypersonalcontextexport20260508": "raw/transcripts/jenffry-personal-context-export-2026-05-08.md", "jenffrypersonalcontextexport20260508md": "raw/transcripts/jenffry-personal-context-export-2026-05-08.md", "mentalhealthgoallayervoiceintake20260511": "raw/transcripts/mental-health-goal-layer-2026-05-11.md", "rawtranscriptsmentalhealthgoallayer20260511md": "raw/transcripts/mental-health-goal-layer-2026-05-11.md", "mentalhealthgoallayer20260511md": "raw/transcripts/mental-health-goal-layer-2026-05-11.md", "mentalhealthgoallayer20260511": "raw/transcripts/mental-health-goal-layer-2026-05-11.md", "mentalhealthpractices20260511": "raw/transcripts/mental-health-practices-2026-05-11.md", "rawtranscriptsmentalhealthpractices20260511md": "raw/transcripts/mental-health-practices-2026-05-11.md", "mentalhealthpracticesvoiceintake20260511": "raw/transcripts/mental-health-practices-2026-05-11.md", "mentalhealthpractices20260511md": "raw/transcripts/mental-health-practices-2026-05-11.md", "rawtranscriptsmentatpersonalityprofile20260510md": "raw/transcripts/mentat-personality-profile-2026-05-10.md", "mentatpersonalityprofile20260510": "raw/transcripts/mentat-personality-profile-2026-05-10.md", "mentatpersonalityinfrankherbertsdune": "raw/transcripts/mentat-personality-profile-2026-05-10.md", "mentatpersonalityprofile20260510md": "raw/transcripts/mentat-personality-profile-2026-05-10.md", "systemcurrentstrategymd": "system/current-strategy.md", "currentstrategy": "system/current-strategy.md", "currentstrategymd": "system/current-strategy.md", "dashboardmd": "system/dashboard.md", "systemdashboardmd": "system/dashboard.md", "dashboard": "system/dashboard.md", "systemdecisionlogmd": "system/decision-log.md", "decisionlogmd": "system/decision-log.md", "decisionlog": "system/decision-log.md", "openloops": "system/open-loops.md", "openloopsmd": "system/open-loops.md", "systemopenloopsmd": "system/open-loops.md", "systemsaphooperatingsystemmd": "system/sapho-operating-system.md", "saphooperatingsystemmd": "system/sapho-operating-system.md", "saphooperatingsystem": "system/sapho-operating-system.md"}}</script>
+<script id='wiki-graph-data' type='application/json'>{"nodes": [{"id": "SCHEMA.md", "dom_id": "page-schema-md", "title": "Wiki Schema", "category": "root", "excerpt": "This wiki stores structured continuity for Jenffry and Sapho: current strategy, life-area context, decisions, open loops, dashboard-facing summaries, and raw source material. areas/ — life-area pages and subpages. This is the main personal operating map. syste", "degree": 0, "radius": 5}, {"id": "areas/career/business.md", "dom_id": "page-areas-career-business-md", "title": "Business", "category": "areas", "excerpt": "Status: Possibility space, not the lead execution domain. Current priority: preserve business-development option value without overcommitting. Active signals: Blaze Creative Agency, AI-agent work, proof assets, income leverage. Open loops: define business expe", "degree": 3, "radius": 8}, {"id": "areas/career/work/princess-storybook.md", "dom_id": "page-areas-career-work-princess-storybook-md", "title": "Princess Storybook", "category": "areas", "excerpt": "Status: Active work project page. Current priority: scratch build; references only, not base. Active signals: reusable foundations/components/source-backed patterns; local fonts, not Princess/Typekit runtime URLs. Open loops: continue Storybook build from save", "degree": 3, "radius": 8}, {"id": "areas/career/work/princess-ux.md", "dom_id": "page-areas-career-work-princess-ux-md", "title": "Princess UX", "category": "areas", "excerpt": "Status: Active work project context. Current priority: keep Princess UX/UI context available without mixing Jira with personal TickTick clutter. Active signals: UX/UI work clusters, Princess planning, AI/workflow support. Open loops: preserve Princess-specific", "degree": 9, "radius": 14}, {"id": "areas/career/work.md", "dom_id": "page-areas-career-work-md", "title": "Work", "category": "areas", "excerpt": "Status: Active career execution domain. Current priority: Princess UX/UI quality, work leverage, and sustainable senior UX growth. Active signals: Princess UX, Storybook, Jira/TickTick boundaries, AI-assisted work leverage. Open loops: avoid after-hours spillo", "degree": 11, "radius": 16}, {"id": "areas/career.md", "dom_id": "page-areas-career-md", "title": "Career", "category": "areas", "excerpt": "Status: Career splits into Work and Business; AI-agent work can be work leverage, hobby, or business possibility depending context. Current priority: Princess UX/work quality first, business-development possibility second. Active signals: senior UX growth, Pri", "degree": 15, "radius": 17}, {"id": "areas/finances/cash-flow.md", "dom_id": "page-areas-finances-cash-flow-md", "title": "Cash Flow", "category": "areas", "excerpt": "Status: Active operational finance page. Current priority: weekly/monthly budget reality, obligations, and guardrails. Active signals: income assumptions, monthly budget, weekly budget equivalent, May 2026 status. Open loops: verify forward assumptions and mai", "degree": 4, "radius": 9}, {"id": "areas/finances/investing.md", "dom_id": "page-areas-finances-investing-md", "title": "Investing", "category": "areas", "excerpt": "Status: Visible but not the current tactical priority. Current priority: keep long-term investing direction from distracting from cash-flow stability. Active signals: emergency fund, 401k, longer-term financial freedom track. Open loops: define later after cas", "degree": 3, "radius": 8}, {"id": "areas/finances.md", "dom_id": "page-areas-finances-md", "title": "Finances", "category": "areas", "excerpt": "Status: Cash-flow is the active finance front; investing remains visible but secondary. Current priority: prevent budget drift and credit-card interest while preserving long-term financial direction. Active signals: one-income household, weekly operating numbe", "degree": 14, "radius": 17}, {"id": "areas/health/mental-health.md", "dom_id": "page-areas-health-mental-health-md", "title": "Mental Health", "category": "areas", "excerpt": "Status: Top current life priority. Current priority: reduce observer-mode/self-monitoring and build presence/future excitement. Active signals: rumination, presence in conversation/pickleball, quicker return to the present. Open loops: continue therapy/meditat", "degree": 13, "radius": 17}, {"id": "areas/health/physical-health.md", "dom_id": "page-areas-health-physical-health-md", "title": "Physical Health", "category": "areas", "excerpt": "Status: Active support system for mental health, capacity, body composition, and strength. Current priority: gym consistency, body baseline, sleep, food, medical/lab follow-up. Active signals: Hevy workouts, weight/body composition, sleep quality, energy, test", "degree": 12, "radius": 17}, {"id": "areas/health.md", "dom_id": "page-areas-health-md", "title": "Health", "category": "areas", "excerpt": "Status: Mental health is the leading life priority; physical health supports stability and capacity. Current priority: keep the Health area cleanly split into mental health and physical health. Active signals: energy, sleep, rumination, gym consistency, medica", "degree": 8, "radius": 13}, {"id": "areas/leisure/hobbies.md", "dom_id": "page-areas-leisure-hobbies-md", "title": "Hobbies", "category": "areas", "excerpt": "Status: Active restoration subarea. Current priority: preserve play and interest without over-systematizing it. Active signals: windsurfing, gaming, VR, fishing, AI-agent tinkering when hobby-framed. Open loops: protect hobbies as capacity/future-excitement si", "degree": 3, "radius": 8}, {"id": "areas/leisure/outings.md", "dom_id": "page-areas-leisure-outings-md", "title": "Outings", "category": "areas", "excerpt": "Status: Active idea backlog for chosen fun/social/family outings. Current priority: keep ideas available without making TickTick noisy. Active signals: weekend ideas, monthly outings, concerts, events, movie/comic-store possibilities. Open loops: choose concre", "degree": 3, "radius": 8}, {"id": "areas/leisure/social.md", "dom_id": "page-areas-leisure-social-md", "title": "Social", "category": "areas", "excerpt": "Status: Active leisure subarea. Current priority: social rebuilding and invitations without making social life an admin project. Active signals: friends, D&D/tabletop leads, meetups, conversation confidence. Open loops: choose concrete social experiments when ", "degree": 4, "radius": 9}, {"id": "areas/leisure.md", "dom_id": "page-areas-leisure-md", "title": "Leisure", "category": "areas", "excerpt": "Status: Restoration and future-excitement domain. Current priority: protect social/fun without turning it into productivity clutter. Active signals: weekend ideas, outings, hobbies, social rebuilding. Open loops: keep ideas in wiki; TickTick gets only chosen c", "degree": 17, "radius": 17}, {"id": "areas/life-admin.md", "dom_id": "page-areas-life-admin-md", "title": "Life Admin", "category": "areas", "excerpt": "Status: Maintenance renamed to Life Admin. Current priority: immigration/citizenship and other concrete admin obligations without over-fragmenting. Active signals: green card / USCIS follow-up, admin obligations, home/system maintenance. Open loops: citizenshi", "degree": 10, "radius": 15}, {"id": "areas/relationships/fatherhood.md", "dom_id": "page-areas-relationships-fatherhood-md", "title": "Fatherhood", "category": "areas", "excerpt": "Status: Active clarity domain. Current priority: protect fatherhood presence and relationship with Nolan. Active signals: father role, Nolan context, regrets to avoid, development/presence questions. Open loops: fatherhood clarity and future structure question", "degree": 3, "radius": 8}, {"id": "areas/relationships/partner.md", "dom_id": "page-areas-relationships-partner-md", "title": "Partner", "category": "areas", "excerpt": "Status: Active clarity domain. Current priority: understand the partner/marriage path without collapsing it into fatherhood. Active signals: Aubrey context, repair/stay/leave questions, future structure. Open loops: therapist exercise and relationship clarity ", "degree": 3, "radius": 8}, {"id": "areas/relationships.md", "dom_id": "page-areas-relationships-md", "title": "Relationships", "category": "areas", "excerpt": "Status: Relationship clarity is active and sensitive; separate partner questions from fatherhood questions. Current priority: maintain clean distinction between partner/marriage and fatherhood. Active signals: Aubrey context, Nolan context, future-family struc", "degree": 19, "radius": 17}, {"id": "entities/jenffry.md", "dom_id": "page-entities-jenffry-md", "title": "Jenffry", "category": "entities", "excerpt": "This page is the high-level orientation page for Jenffry: who he is, what matters, what he is building, and what context Hermes should preserve over time. Name: Jenffry. Timezone: America/New_York. Preferred mobile channel: Telegram. Jenffry is not an emoji us", "degree": 15, "radius": 17}, {"id": "inbox/brain-dump-sessions.md", "dom_id": "page-inbox-brain-dump-sessions-md", "title": "Brain Dump Sessions", "category": "inbox", "excerpt": "This page is the collection point for Jenffry's freeform brain dump sessions. When Jenffry explicitly says \"this is a brain dump session\" or clearly identifies a message as a brain dump, capture what follows here first, without prematurely organizing, judging,", "degree": 7, "radius": 12}, {"id": "inbox/perception-log.md", "dom_id": "page-inbox-perception-log-md", "title": "Perception Log", "category": "inbox", "excerpt": "This page is a lightweight capture point for Jenffry's momentary inner-state dumps: emotions, body sensations, energy, stress, mood, pain/tension, clarity/fog, urges, random perceptions, and other felt signals. The scope is intentionally broad. It is not only ", "degree": 7, "radius": 12}, {"id": "index.md", "dom_id": "page-index-md", "title": "Wiki Index", "category": "root", "excerpt": "health mental-health physical-health relationships partner fatherhood finances cash-flow investing career work princess-ux princess-storybook business leisure social hobbies outings life-admin current-strategy open-loops decision-log sapho-operating-system das", "degree": 28, "radius": 17}, {"id": "log.md", "dom_id": "page-log-md", "title": "Wiki Log", "category": "root", "excerpt": "> Chronological record of wiki actions. > Format: ## [YYYY-MM-DD] action | subject > Actions: create, ingest, update, query, lint, archive, delete Renamed/relinked main wiki life-area pages to match the final taxonomy: health, relationships, finances, career, ", "degree": 1, "radius": 6}, {"id": "plans/wiki-life-area-migration-2026-05-20.md", "dom_id": "page-plans-wiki-life-area-migration-2026-05-20-md", "title": "Wiki Life-Area Migration Plan", "category": "plans", "excerpt": "Reorganize Jenffry's wiki around a cleaner life-area spine while preserving all existing content and keeping the hosted Sapho dashboard fed from real wiki pages. Keep a review log only if dated weekly history proves useful later; do not create a separate revie", "degree": 1, "radius": 6}, {"id": "raw/finance/budget-rebuild-2026-05-14.md", "dom_id": "page-raw-finance-budget-rebuild-2026-05-14-md", "title": "Budget rebuild from transaction export — 2026-05-14", "category": "raw", "excerpt": "Source files: /opt/data/cache/documents/doc_68a36823b11c_2026-05-14T15_44_57.189Z-transactions.csv — April 2026 export, 205 transactions. /opt/data/cache/documents/doc_2d5b306ad004_2026-05-14T15_49_43.994Z-transactions.csv — full export, 3,300 transactions, da", "degree": 0, "radius": 5}, {"id": "raw/reference/life-area-frameworks-2026-05-20.md", "dom_id": "page-raw-reference-life-area-frameworks-2026-05-20-md", "title": "Life Area Frameworks", "category": "raw", "excerpt": "This page captures common life-area models other people use, so Jenffry's own taxonomy can stay grounded in outside patterns instead of feeling invented from scratch. Most life-area systems use 5 to 10 domains. They usually include some combination of: health ", "degree": 0, "radius": 5}, {"id": "raw/reference/sapho-system-improvement-plan-2026-05-20.md", "dom_id": "page-raw-reference-sapho-system-improvement-plan-2026-05-20-md", "title": "**Upgrade thesis**", "category": "raw", "excerpt": "Below is the processed upgrade plan for Sapho as a personal Hermes AI agent system. The conversation shows that Sapho is already a serious layered operating system: SOUL/persona, persistent memory, wiki, skills, cron, TickTick, raw capture, backups, and extern", "degree": 0, "radius": 5}, {"id": "raw/transcripts/family-relationship-clarity-intake-2026-05-11.md", "dom_id": "page-raw-transcripts-family-relationship-clarity-intake-2026-05-11-md", "title": "Family / relationship / fatherhood clarity intake — 2026-05-11", "category": "raw", "excerpt": "Source: Telegram voice transcript from Jenffry. Key framework: For this goal area, the 12-month goal cannot be fully defined today because the work itself is gaining clarity. The equivalent of “going to the gym” for this area is doing clarity exercises/session", "degree": 0, "radius": 5}, {"id": "raw/transcripts/goals-layer-voice-intake-2026-05-10.md", "dom_id": "page-raw-transcripts-goals-layer-voice-intake-2026-05-10-md", "title": "Goals-layer voice intake — 2026-05-10", "category": "raw", "excerpt": "Source: Telegram voice message from Jenffry. Purpose: Raw source for solidifying Jenffry's goals layer. Preserve as evidence; synthesize into wiki pages separately. Okay, so two notes based on something that you said, and that core meditation, attention. You k", "degree": 0, "radius": 5}, {"id": "raw/transcripts/jenffry-personal-context-export-2026-05-08.md", "dom_id": "page-raw-transcripts-jenffry-personal-context-export-2026-05-08-md", "title": "Jenffry Personal Context Export 2026 05 08", "category": "raw", "excerpt": "Personal context export for Hermes. This file is only about Jenffry: facts, preferences, priorities, life context, health, family, work, money, hobbies, goals, and unresolved personal themes. Name: Jenffry. Timezone: America/New_York. Preferred address in prio", "degree": 0, "radius": 5}, {"id": "raw/transcripts/mental-health-goal-layer-2026-05-11.md", "dom_id": "page-raw-transcripts-mental-health-goal-layer-2026-05-11-md", "title": "Mental-health goal-layer voice intake — 2026-05-11", "category": "raw", "excerpt": "Source: Telegram voice transcript from Jenffry. Jenffry described the 12-month mental-health goal as being “back to normal” but stronger because the crisis happened. Key points: A current distressing pattern is “observer mode” / dissociation-like experience: l", "degree": 0, "radius": 5}, {"id": "raw/transcripts/mental-health-practices-2026-05-11.md", "dom_id": "page-raw-transcripts-mental-health-practices-2026-05-11-md", "title": "Mental-health practices voice intake — 2026-05-11", "category": "raw", "excerpt": "Source: Telegram voice transcript from Jenffry. Jenffry clarified the practice layer for the 12-month mental-health goal: Continue seeing his therapist. Meditate four times per week, typically tied to gym visits. Do a weekly activity, and additional activities", "degree": 0, "radius": 5}, {"id": "raw/transcripts/mentat-personality-profile-2026-05-10.md", "dom_id": "page-raw-transcripts-mentat-personality-profile-2026-05-10-md", "title": "Mentat Personality in Frank Herbert’s Dune", "category": "raw", "excerpt": "In Frank Herbert’s core canon, Mentats are not emotionless “human computers.” They are disciplined analysts whose personalities are shaped by training, duty, and the institutional role they occupy. Herbert’s clearest statement comes when Jessica tells Thufir H", "degree": 0, "radius": 5}, {"id": "system/current-strategy.md", "dom_id": "page-system-current-strategy-md", "title": "Current Strategy", "category": "system", "excerpt": "Status: Main strategy page merging current plan, focus map, and goals cascade. Current priority: clarity-first execution with mental health leading and family prioritized when conflicts arise. Active signals: current plan, primary focus, goals cascade, life-ar", "degree": 31, "radius": 17}, {"id": "system/dashboard.md", "dom_id": "page-system-dashboard-md", "title": "Dashboard", "category": "system", "excerpt": "Status: Hosted GitHub Pages dashboard shows the full live wiki with graph view and expandable page cards. Current priority: feed the dashboard from real wiki pages through Dashboard summary sections. Active signals: current strategy, life-area summaries, open ", "degree": 19, "radius": 17}, {"id": "system/decision-log.md", "dom_id": "page-system-decision-log-md", "title": "Decision Log", "category": "system", "excerpt": "Status: Active decision history. Current priority: capture actual decisions, not every idea. Active signals: strategy, dashboard, taxonomy, task-system decisions. Open loops: none; new decisions should be appended here. Next concrete move: add migration approv", "degree": 24, "radius": 17}, {"id": "system/open-loops.md", "dom_id": "page-system-open-loops-md", "title": "Open Loops", "category": "system", "excerpt": "Status: Active unresolved-item register. Current priority: keep unresolved questions visible without turning every idea into a task. Active signals: pending decisions, unfinished setup, future follow-ups. Open loops: see source sections below. Next concrete mo", "degree": 27, "radius": 17}, {"id": "system/sapho-operating-system.md", "dom_id": "page-system-sapho-operating-system-md", "title": "Sapho Operating System", "category": "system", "excerpt": "Status: Main operating-system page for Sapho continuity, persona, planning style, memory/wiki/skill use, and anti-clutter rules. Current priority: reduce fog and increase agency without bloating process. Active signals: continuity system, planning style, Menta", "degree": 27, "radius": 17}, {"id": "system/sapho-system-map.md", "dom_id": "page-system-sapho-system-map-md", "title": "Sapho System Map", "category": "system", "excerpt": "Status: One-page architecture map for Sapho as Jenffry's personal Mentat operating system. Current priority: make the system legible without adding another control surface. Active signals: identity, memory, wiki, skills, cron, TickTick, raw evidence, backups, ", "degree": 0, "radius": 5}, {"id": "system/source-of-truth-registry.md", "dom_id": "page-system-source-of-truth-registry-md", "title": "Source of Truth Registry", "category": "system", "excerpt": "Status: Active routing constitution for Sapho's information layers. Current priority: prevent duplication across memory, wiki, skills, cron, TickTick, and logs. Active signals: Sapho 2.0 should compress control surfaces, strengthen routing, and improve observa", "degree": 0, "radius": 5}], "links": [{"source": "areas/career/business.md", "target": "areas/career.md", "weight": 1}, {"source": "areas/career/work/princess-ux.md", "target": "areas/career.md", "weight": 1}, {"source": "areas/career/work/princess-ux.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/career/work/princess-ux.md", "target": "system/open-loops.md", "weight": 1}, {"source": "areas/career/work.md", "target": "areas/career/work/princess-ux.md", "weight": 1}, {"source": "areas/career/work.md", "target": "areas/career/work/princess-storybook.md", "weight": 1}, {"source": "areas/career/work.md", "target": "areas/career.md", "weight": 1}, {"source": "areas/career/work.md", "target": "areas/life-admin.md", "weight": 1}, {"source": "areas/career/work.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/career/work.md", "target": "system/open-loops.md", "weight": 1}, {"source": "areas/career.md", "target": "areas/career/work.md", "weight": 1}, {"source": "areas/career.md", "target": "areas/career/business.md", "weight": 1}, {"source": "areas/career.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/career.md", "target": "areas/finances.md", "weight": 1}, {"source": "areas/career.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "areas/finances/cash-flow.md", "target": "areas/finances.md", "weight": 1}, {"source": "areas/finances/investing.md", "target": "areas/finances/cash-flow.md", "weight": 1}, {"source": "areas/finances.md", "target": "areas/finances/cash-flow.md", "weight": 1}, {"source": "areas/finances.md", "target": "areas/finances/investing.md", "weight": 1}, {"source": "areas/finances.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/finances.md", "target": "areas/career.md", "weight": 1}, {"source": "areas/finances.md", "target": "system/open-loops.md", "weight": 1}, {"source": "areas/health/mental-health.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "areas/health/mental-health.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/health/mental-health.md", "target": "system/open-loops.md", "weight": 1}, {"source": "areas/health/mental-health.md", "target": "areas/relationships.md", "weight": 1}, {"source": "areas/health/physical-health.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/health/physical-health.md", "target": "system/open-loops.md", "weight": 1}, {"source": "areas/health.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "areas/health.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "areas/health.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "areas/health.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/leisure/hobbies.md", "target": "areas/leisure.md", "weight": 1}, {"source": "areas/leisure/outings.md", "target": "areas/leisure.md", "weight": 1}, {"source": "areas/leisure/social.md", "target": "areas/leisure.md", "weight": 1}, {"source": "areas/leisure.md", "target": "areas/leisure/social.md", "weight": 1}, {"source": "areas/leisure.md", "target": "areas/leisure/hobbies.md", "weight": 1}, {"source": "areas/leisure.md", "target": "areas/leisure/outings.md", "weight": 1}, {"source": "areas/leisure.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/leisure.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "areas/leisure.md", "target": "areas/relationships.md", "weight": 1}, {"source": "areas/life-admin.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/life-admin.md", "target": "system/open-loops.md", "weight": 1}, {"source": "areas/life-admin.md", "target": "areas/career/work.md", "weight": 1}, {"source": "areas/relationships/fatherhood.md", "target": "areas/relationships.md", "weight": 1}, {"source": "areas/relationships/partner.md", "target": "areas/relationships.md", "weight": 1}, {"source": "areas/relationships.md", "target": "areas/relationships/partner.md", "weight": 1}, {"source": "areas/relationships.md", "target": "areas/relationships/fatherhood.md", "weight": 1}, {"source": "areas/relationships.md", "target": "areas/leisure/social.md", "weight": 1}, {"source": "areas/relationships.md", "target": "areas/leisure.md", "weight": 1}, {"source": "areas/relationships.md", "target": "entities/jenffry.md", "weight": 1}, {"source": "areas/relationships.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "areas/relationships.md", "target": "system/open-loops.md", "weight": 1}, {"source": "areas/relationships.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "system/open-loops.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "system/decision-log.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "areas/relationships.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "areas/finances.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "areas/career.md", "weight": 1}, {"source": "entities/jenffry.md", "target": "areas/leisure.md", "weight": 1}, {"source": "inbox/brain-dump-sessions.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "inbox/brain-dump-sessions.md", "target": "system/decision-log.md", "weight": 1}, {"source": "inbox/brain-dump-sessions.md", "target": "system/open-loops.md", "weight": 1}, {"source": "inbox/brain-dump-sessions.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "inbox/perception-log.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "inbox/perception-log.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "inbox/perception-log.md", "target": "system/dashboard.md", "weight": 1}, {"source": "inbox/perception-log.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "index.md", "target": "areas/health.md", "weight": 1}, {"source": "index.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "index.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "index.md", "target": "areas/relationships.md", "weight": 1}, {"source": "index.md", "target": "areas/relationships/partner.md", "weight": 1}, {"source": "index.md", "target": "areas/relationships/fatherhood.md", "weight": 1}, {"source": "index.md", "target": "areas/finances.md", "weight": 1}, {"source": "index.md", "target": "areas/finances/cash-flow.md", "weight": 1}, {"source": "index.md", "target": "areas/finances/investing.md", "weight": 1}, {"source": "index.md", "target": "areas/career.md", "weight": 1}, {"source": "index.md", "target": "areas/career/work.md", "weight": 1}, {"source": "index.md", "target": "areas/career/work/princess-ux.md", "weight": 1}, {"source": "index.md", "target": "areas/career/work/princess-storybook.md", "weight": 1}, {"source": "index.md", "target": "areas/career/business.md", "weight": 1}, {"source": "index.md", "target": "areas/leisure.md", "weight": 1}, {"source": "index.md", "target": "areas/leisure/social.md", "weight": 1}, {"source": "index.md", "target": "areas/leisure/hobbies.md", "weight": 1}, {"source": "index.md", "target": "areas/leisure/outings.md", "weight": 1}, {"source": "index.md", "target": "areas/life-admin.md", "weight": 1}, {"source": "index.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "index.md", "target": "system/open-loops.md", "weight": 1}, {"source": "index.md", "target": "system/decision-log.md", "weight": 1}, {"source": "index.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "index.md", "target": "system/dashboard.md", "weight": 1}, {"source": "index.md", "target": "inbox/brain-dump-sessions.md", "weight": 1}, {"source": "index.md", "target": "inbox/perception-log.md", "weight": 1}, {"source": "index.md", "target": "entities/jenffry.md", "weight": 1}, {"source": "index.md", "target": "plans/wiki-life-area-migration-2026-05-20.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/life-admin.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "system/open-loops.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "system/decision-log.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "entities/jenffry.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/career.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/finances.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "system/dashboard.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/leisure.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/relationships.md", "weight": 1}, {"source": "system/current-strategy.md", "target": "areas/career/work/princess-ux.md", "weight": 1}, {"source": "system/dashboard.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/health.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/relationships.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/finances.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/career.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/leisure.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/life-admin.md", "weight": 1}, {"source": "system/dashboard.md", "target": "system/open-loops.md", "weight": 1}, {"source": "system/dashboard.md", "target": "system/decision-log.md", "weight": 1}, {"source": "system/dashboard.md", "target": "log.md", "weight": 1}, {"source": "system/dashboard.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "system/dashboard.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/health.md", "weight": 1}, {"source": "system/decision-log.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "system/decision-log.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/relationships.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/life-admin.md", "weight": 1}, {"source": "system/decision-log.md", "target": "system/dashboard.md", "weight": 1}, {"source": "system/decision-log.md", "target": "system/open-loops.md", "weight": 1}, {"source": "system/decision-log.md", "target": "inbox/perception-log.md", "weight": 1}, {"source": "system/decision-log.md", "target": "inbox/brain-dump-sessions.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/career/work/princess-storybook.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/career/work/princess-ux.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/finances.md", "weight": 1}, {"source": "system/decision-log.md", "target": "entities/jenffry.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/career/work.md", "weight": 1}, {"source": "system/decision-log.md", "target": "areas/leisure.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "system/open-loops.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "system/open-loops.md", "target": "system/sapho-operating-system.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/life-admin.md", "weight": 1}, {"source": "system/open-loops.md", "target": "system/dashboard.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/career.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/career/work/princess-ux.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/finances.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/leisure.md", "weight": 1}, {"source": "system/open-loops.md", "target": "entities/jenffry.md", "weight": 1}, {"source": "system/open-loops.md", "target": "system/decision-log.md", "weight": 1}, {"source": "system/open-loops.md", "target": "areas/relationships.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "system/current-strategy.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "system/decision-log.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "system/open-loops.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "entities/jenffry.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "inbox/brain-dump-sessions.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "inbox/perception-log.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/career/work.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "system/dashboard.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/health.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/health/mental-health.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/health/physical-health.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/relationships.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/finances.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/career.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/career/work/princess-ux.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/leisure.md", "weight": 1}, {"source": "system/sapho-operating-system.md", "target": "areas/life-admin.md", "weight": 1}], "incoming": {"areas/career.md": 10, "system/current-strategy.md": 18, "system/open-loops.md": 14, "areas/career/work/princess-ux.md": 6, "areas/career/work/princess-storybook.md": 3, "areas/life-admin.md": 7, "areas/career/work.md": 5, "areas/career/business.md": 2, "areas/finances.md": 9, "system/sapho-operating-system.md": 10, "areas/finances/cash-flow.md": 3, "areas/finances/investing.md": 2, "areas/health/physical-health.md": 10, "areas/relationships.md": 11, "areas/health/mental-health.md": 9, "areas/leisure.md": 11, "areas/leisure/social.md": 3, "areas/leisure/hobbies.md": 2, "areas/leisure/outings.md": 2, "areas/relationships/partner.md": 2, "areas/relationships/fatherhood.md": 2, "entities/jenffry.md": 6, "system/decision-log.md": 7, "system/dashboard.md": 6, "areas/health.md": 4, "inbox/brain-dump-sessions.md": 3, "inbox/perception-log.md": 3, "plans/wiki-life-area-migration-2026-05-20.md": 1, "log.md": 1}, "outgoing": {"areas/career/business.md": 1, "areas/career/work/princess-ux.md": 3, "areas/career/work.md": 6, "areas/career.md": 5, "areas/finances/cash-flow.md": 1, "areas/finances/investing.md": 1, "areas/finances.md": 5, "areas/health/mental-health.md": 4, "areas/health/physical-health.md": 2, "areas/health.md": 4, "areas/leisure/hobbies.md": 1, "areas/leisure/outings.md": 1, "areas/leisure/social.md": 1, "areas/leisure.md": 6, "areas/life-admin.md": 3, "areas/relationships/fatherhood.md": 1, "areas/relationships/partner.md": 1, "areas/relationships.md": 8, "entities/jenffry.md": 9, "inbox/brain-dump-sessions.md": 4, "inbox/perception-log.md": 4, "index.md": 28, "system/current-strategy.md": 13, "system/dashboard.md": 13, "system/decision-log.md": 17, "system/open-loops.md": 13, "system/sapho-operating-system.md": 17}, "lookup": {"schemamd": "SCHEMA.md", "wikischema": "SCHEMA.md", "schema": "SCHEMA.md", "business": "areas/career/business.md", "areascareerbusinessmd": "areas/career/business.md", "businessmd": "areas/career/business.md", "princessstorybookmd": "areas/career/work/princess-storybook.md", "areascareerworkprincessstorybookmd": "areas/career/work/princess-storybook.md", "princessstorybook": "areas/career/work/princess-storybook.md", "princessux": "areas/career/work/princess-ux.md", "areascareerworkprincessuxmd": "areas/career/work/princess-ux.md", "princessuxmd": "areas/career/work/princess-ux.md", "work": "areas/career/work.md", "areascareerworkmd": "areas/career/work.md", "workmd": "areas/career/work.md", "career": "areas/career.md", "areascareermd": "areas/career.md", "careermd": "areas/career.md", "cashflowmd": "areas/finances/cash-flow.md", "areasfinancescashflowmd": "areas/finances/cash-flow.md", "cashflow": "areas/finances/cash-flow.md", "investing": "areas/finances/investing.md", "investingmd": "areas/finances/investing.md", "areasfinancesinvestingmd": "areas/finances/investing.md", "areasfinancesmd": "areas/finances.md", "finances": "areas/finances.md", "financesmd": "areas/finances.md", "mentalhealth": "areas/health/mental-health.md", "mentalhealthmd": "areas/health/mental-health.md", "areashealthmentalhealthmd": "areas/health/mental-health.md", "physicalhealth": "areas/health/physical-health.md", "physicalhealthmd": "areas/health/physical-health.md", "areashealthphysicalhealthmd": "areas/health/physical-health.md", "areashealthmd": "areas/health.md", "healthmd": "areas/health.md", "health": "areas/health.md", "areasleisurehobbiesmd": "areas/leisure/hobbies.md", "hobbies": "areas/leisure/hobbies.md", "hobbiesmd": "areas/leisure/hobbies.md", "outingsmd": "areas/leisure/outings.md", "areasleisureoutingsmd": "areas/leisure/outings.md", "outings": "areas/leisure/outings.md", "socialmd": "areas/leisure/social.md", "areasleisuresocialmd": "areas/leisure/social.md", "social": "areas/leisure/social.md", "areasleisuremd": "areas/leisure.md", "leisure": "areas/leisure.md", "leisuremd": "areas/leisure.md", "lifeadminmd": "areas/life-admin.md", "areaslifeadminmd": "areas/life-admin.md", "lifeadmin": "areas/life-admin.md", "areasrelationshipsfatherhoodmd": "areas/relationships/fatherhood.md", "fatherhoodmd": "areas/relationships/fatherhood.md", "fatherhood": "areas/relationships/fatherhood.md", "areasrelationshipspartnermd": "areas/relationships/partner.md", "partnermd": "areas/relationships/partner.md", "partner": "areas/relationships/partner.md", "relationships": "areas/relationships.md", "areasrelationshipsmd": "areas/relationships.md", "relationshipsmd": "areas/relationships.md", "jenffrymd": "entities/jenffry.md", "jenffry": "entities/jenffry.md", "entitiesjenffrymd": "entities/jenffry.md", "braindumpsessions": "inbox/brain-dump-sessions.md", "braindumpsessionsmd": "inbox/brain-dump-sessions.md", "inboxbraindumpsessionsmd": "inbox/brain-dump-sessions.md", "perceptionlogmd": "inbox/perception-log.md", "perceptionlog": "inbox/perception-log.md", "inboxperceptionlogmd": "inbox/perception-log.md", "wikiindex": "index.md", "index": "index.md", "indexmd": "index.md", "logmd": "log.md", "wikilog": "log.md", "log": "log.md", "wikilifeareamigrationplan": "plans/wiki-life-area-migration-2026-05-20.md", "planswikilifeareamigration20260520md": "plans/wiki-life-area-migration-2026-05-20.md", "wikilifeareamigration20260520md": "plans/wiki-life-area-migration-2026-05-20.md", "wikilifeareamigration20260520": "plans/wiki-life-area-migration-2026-05-20.md", "budgetrebuildfromtransactionexport20260514": "raw/finance/budget-rebuild-2026-05-14.md", "budgetrebuild20260514md": "raw/finance/budget-rebuild-2026-05-14.md", "budgetrebuild20260514": "raw/finance/budget-rebuild-2026-05-14.md", "rawfinancebudgetrebuild20260514md": "raw/finance/budget-rebuild-2026-05-14.md", "rawreferencelifeareaframeworks20260520md": "raw/reference/life-area-frameworks-2026-05-20.md", "lifeareaframeworks20260520": "raw/reference/life-area-frameworks-2026-05-20.md", "lifeareaframeworks20260520md": "raw/reference/life-area-frameworks-2026-05-20.md", "lifeareaframeworks": "raw/reference/life-area-frameworks-2026-05-20.md", "saphosystemimprovementplan20260520md": "raw/reference/sapho-system-improvement-plan-2026-05-20.md", "rawreferencesaphosystemimprovementplan20260520md": "raw/reference/sapho-system-improvement-plan-2026-05-20.md", "saphosystemimprovementplan20260520": "raw/reference/sapho-system-improvement-plan-2026-05-20.md", "upgradethesis": "raw/reference/sapho-system-improvement-plan-2026-05-20.md", "familyrelationshipclarityintake20260511": "raw/transcripts/family-relationship-clarity-intake-2026-05-11.md", "familyrelationshipclarityintake20260511md": "raw/transcripts/family-relationship-clarity-intake-2026-05-11.md", "rawtranscriptsfamilyrelationshipclarityintake20260511md": "raw/transcripts/family-relationship-clarity-intake-2026-05-11.md", "familyrelationshipfatherhoodclarityintake20260511": "raw/transcripts/family-relationship-clarity-intake-2026-05-11.md", "goalslayervoiceintake20260510md": "raw/transcripts/goals-layer-voice-intake-2026-05-10.md", "rawtranscriptsgoalslayervoiceintake20260510md": "raw/transcripts/goals-layer-voice-intake-2026-05-10.md", "goalslayervoiceintake20260510": "raw/transcripts/goals-layer-voice-intake-2026-05-10.md", "rawtranscriptsjenffrypersonalcontextexport20260508md": "raw/transcripts/jenffry-personal-context-export-2026-05-08.md", "jenffrypersonalcontextexport20260508": "raw/transcripts/jenffry-personal-context-export-2026-05-08.md", "jenffrypersonalcontextexport20260508md": "raw/transcripts/jenffry-personal-context-export-2026-05-08.md", "mentalhealthgoallayer20260511md": "raw/transcripts/mental-health-goal-layer-2026-05-11.md", "mentalhealthgoallayervoiceintake20260511": "raw/transcripts/mental-health-goal-layer-2026-05-11.md", "mentalhealthgoallayer20260511": "raw/transcripts/mental-health-goal-layer-2026-05-11.md", "rawtranscriptsmentalhealthgoallayer20260511md": "raw/transcripts/mental-health-goal-layer-2026-05-11.md", "mentalhealthpractices20260511md": "raw/transcripts/mental-health-practices-2026-05-11.md", "rawtranscriptsmentalhealthpractices20260511md": "raw/transcripts/mental-health-practices-2026-05-11.md", "mentalhealthpracticesvoiceintake20260511": "raw/transcripts/mental-health-practices-2026-05-11.md", "mentalhealthpractices20260511": "raw/transcripts/mental-health-practices-2026-05-11.md", "mentatpersonalityinfrankherbertsdune": "raw/transcripts/mentat-personality-profile-2026-05-10.md", "mentatpersonalityprofile20260510md": "raw/transcripts/mentat-personality-profile-2026-05-10.md", "rawtranscriptsmentatpersonalityprofile20260510md": "raw/transcripts/mentat-personality-profile-2026-05-10.md", "mentatpersonalityprofile20260510": "raw/transcripts/mentat-personality-profile-2026-05-10.md", "systemcurrentstrategymd": "system/current-strategy.md", "currentstrategy": "system/current-strategy.md", "currentstrategymd": "system/current-strategy.md", "dashboard": "system/dashboard.md", "systemdashboardmd": "system/dashboard.md", "dashboardmd": "system/dashboard.md", "systemdecisionlogmd": "system/decision-log.md", "decisionlogmd": "system/decision-log.md", "decisionlog": "system/decision-log.md", "openloopsmd": "system/open-loops.md", "systemopenloopsmd": "system/open-loops.md", "openloops": "system/open-loops.md", "saphooperatingsystem": "system/sapho-operating-system.md", "systemsaphooperatingsystemmd": "system/sapho-operating-system.md", "saphooperatingsystemmd": "system/sapho-operating-system.md", "saphosystemmapmd": "system/sapho-system-map.md", "systemsaphosystemmapmd": "system/sapho-system-map.md", "saphosystemmap": "system/sapho-system-map.md", "sourceoftruthregistry": "system/source-of-truth-registry.md", "sourceoftruthregistrymd": "system/source-of-truth-registry.md", "systemsourceoftruthregistrymd": "system/source-of-truth-registry.md"}}</script>
 <script src='https://cdn.jsdelivr.net/npm/d3@7'></script>
 <script>
 (() => {
