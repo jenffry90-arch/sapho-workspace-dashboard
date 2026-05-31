@@ -5,4 +5,4 @@ compatibility_date = "2026-05-31"
 [[d1_databases]]
 binding = "DB"
 database_name = "sapho-task-score-db"
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+database_id = "3d508763-c817-453f-bdb2-64120f5bf280"
